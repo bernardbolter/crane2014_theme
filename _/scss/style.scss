@@ -1,0 +1,19 @@
+/*!
+Theme Name: evanZcrane_theme
+Theme URI: http://www.evanzcrane.com
+Description: WP Theme for Evan Z Crane - Modern Heirloom Furniture
+Author: Bernard John Bolter IV
+Author URI: http://smoothism.com/
+Version: 1.0.0
+License: GNU General Public License
+*/
+
+@import "compass";
+@import "compass/reset";
+@import "susy";
+
+@import "variables";
+@import "mixins";
+@import "base";
+@import "modules";
+@import "layout";
