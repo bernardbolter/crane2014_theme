@@ -1,4 +1,4 @@
-# WP Theme for Evan Z. Crane's webiste - Modern Heirloom Furniture
+# WP Theme for Evan Z. Crane's website - Modern Heirloom Furniture
 
 Version: 1.0
 
