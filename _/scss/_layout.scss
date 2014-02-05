@@ -1,0 +1,166 @@
+/* SUSY SETUP -----------------------------------------------------------*/
+$total-columns         : 12;
+$column-width		   : 4em;
+$gutter-width          : 1em;
+$grid-padding          : $gutter-width;
+
+@include border-box-sizing;
+
+$small                 : 30em;
+$medium                : 47em;
+$large                 : 75em;
+
+/* HEADER -----------------------------------------------------------*/
+
+.name {
+	font-size: 2.1rem;
+	text-align: center;
+	display: block;
+
+	a {
+		text-decoration: none;
+		color: #bbb;
+		margin: 15px 0 10px 0;
+		display: block;
+		letter-spacing: .1rem;
+		font-family: $font-primary;
+	}
+}
+
+.line {
+	width: 80%;
+	margin: 5px auto 0;
+	border-bottom: 1px solid #999;
+}
+
+.title_tagline {
+	font-size: 1rem;
+	margin: 3px 0;
+	color: #666;
+	text-align: center;
+	letter-spacing: .2rem; 
+}
+
+.tagline_line {
+	margin: 0 auto;
+	background-color: #878787;
+	height: 1px;
+	width: 250px;
+}
+
+/* NAVIGATION -----------------------------------------------------------*/
+
+.nav {
+	list-style: none;
+	margin: 10px auto;
+	padding: 0;
+	display: block;
+
+	li {
+		float: left;
+		width: 50%;
+
+		a {
+			font-size: 1rem;
+			color: #bbb;
+			text-decoration: none;
+			margin: 0;
+			line-height: 1rem;
+			display: block;
+			padding: 5px 10px;
+			letter-spacing: .2rem;
+			text-transform: capitalize;
+
+			&:hover {
+				color: #777;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.mobile_left a {
+	text-align: right !important;
+	margin-right: 5px;
+	border-right: 1px solid #999;
+}
+
+.mobile_right a {
+	text-align: left !important;
+	margin-left: 5px;
+}
+
+/* HOME PAGE -----------------------------------------------------------*/
+
+.homepage_left {
+	width: 94%;
+	float: left;
+	margin: 1.2rem 3% 0.5rem;
+
+	p {
+		font-size: 0.75rem;
+		text-align: right;
+		color: #888;
+		float: right;
+		width: 220px;
+		letter-spacing: 0.1rem;
+		font-weight: 700;
+		line-height: 140%;
+	}
+}
+
+.homepage_right {
+	width: 94%;
+	float: left;
+	margin: 0 3%;
+
+	a {
+		margin: 0;
+		float: left;
+		width: 100%;
+		color: #333;
+		text-decoration: none;
+		font-size: 0.8rem;
+		opacity: .8;
+		@include single-transition(opacity, .70s, ease-in-out);
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.home_image_hr {
+	background-color: #878787;
+	float: left;
+	height: 1px;
+	display: block;
+	width: 250px;
+	margin: 5px 0 10px;
+	opacity: 1 !important;
+}
+
+/* FOOTER -----------------------------------------------------------*/
+
+.footer_wrap {
+	width: 100%;
+	display: block;
+	float: left;
+
+	p {
+		text-align: center;
+		display: block;
+		color: #aaa;
+		margin: 0 auto 30px;
+		width: 80%;
+		font-size: 12px;
+		border-top: 1px solid #666;
+		padding-top: 2em;
+		line-height: 130%;
+	}
+}
+

@@ -10,7 +10,7 @@
 
 	<title><?php wp_title( ' | ', true, 'right' ); ?></title>
 
-	<meta name="viewport" content="width=device-width, intital-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="icon" type="image/png" href="<?php bloginfo( 'url' ); ?>/favicon.png">

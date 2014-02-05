@@ -1,3 +1,4 @@
+@import url("http://fonts.googleapis.com/css?family=Droid+Sans:400,700|GFS+Didot");
 /*!
 Theme Name: evanZcrane_theme
 Theme URI: http://www.evanzcrane.com
@@ -70,4 +71,200 @@ a img {
 /* line 116, ../../../../../../../Users/bemajor/.rvm/gems/ruby-2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
+}
+
+/* line 3, _/scss/_base.scss */
+body {
+  font-family: GFS Didot, serif;
+  font-size: 1.2rem;
+  line-height: 160%;
+  color: #666;
+}
+
+/* line 10, _/scss/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Droid Sans, sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+
+/* line 16, _/scss/_base.scss */
+.main_container {
+  width: 96%;
+  margin: 2% auto;
+  border: .063em solid #878787;
+  overflow: hidden;
+  display: block;
+}
+
+/* SUSY SETUP -----------------------------------------------------------*/
+/* line 14, ../../../../../../../Users/bemajor/.rvm/gems/ruby-2.1.0/gems/susy-1.0.9/sass/susy/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* HEADER -----------------------------------------------------------*/
+/* line 15, _/scss/_layout.scss */
+.name {
+  font-size: 2.1rem;
+  text-align: center;
+  display: block;
+}
+/* line 20, _/scss/_layout.scss */
+.name a {
+  text-decoration: none;
+  color: #bbb;
+  margin: 15px 0 10px 0;
+  display: block;
+  letter-spacing: .1rem;
+  font-family: GFS Didot, serif;
+}
+
+/* line 30, _/scss/_layout.scss */
+.line {
+  width: 80%;
+  margin: 5px auto 0;
+  border-bottom: 1px solid #999;
+}
+
+/* line 36, _/scss/_layout.scss */
+.title_tagline {
+  font-size: 1rem;
+  margin: 3px 0;
+  color: #666;
+  text-align: center;
+  letter-spacing: .2rem;
+}
+
+/* line 44, _/scss/_layout.scss */
+.tagline_line {
+  margin: 0 auto;
+  background-color: #878787;
+  height: 1px;
+  width: 250px;
+}
+
+/* NAVIGATION -----------------------------------------------------------*/
+/* line 53, _/scss/_layout.scss */
+.nav {
+  list-style: none;
+  margin: 10px auto;
+  padding: 0;
+  display: block;
+}
+/* line 59, _/scss/_layout.scss */
+.nav li {
+  float: left;
+  width: 50%;
+}
+/* line 63, _/scss/_layout.scss */
+.nav li a {
+  font-size: 1rem;
+  color: #bbb;
+  text-decoration: none;
+  margin: 0;
+  line-height: 1rem;
+  display: block;
+  padding: 5px 10px;
+  letter-spacing: .2rem;
+  text-transform: capitalize;
+}
+/* line 74, _/scss/_layout.scss */
+.nav li a:hover {
+  color: #777;
+  text-decoration: underline;
+}
+
+/* line 82, _/scss/_layout.scss */
+.mobile_left a {
+  text-align: right !important;
+  margin-right: 5px;
+  border-right: 1px solid #999;
+}
+
+/* line 88, _/scss/_layout.scss */
+.mobile_right a {
+  text-align: left !important;
+  margin-left: 5px;
+}
+
+/* HOME PAGE -----------------------------------------------------------*/
+/* line 95, _/scss/_layout.scss */
+.homepage_left {
+  width: 94%;
+  float: left;
+  margin: 1.2rem 3% 0.5rem;
+}
+/* line 100, _/scss/_layout.scss */
+.homepage_left p {
+  font-size: 0.75rem;
+  text-align: right;
+  color: #888;
+  float: right;
+  width: 220px;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+/* line 112, _/scss/_layout.scss */
+.homepage_right {
+  width: 94%;
+  float: left;
+  margin: 0 3%;
+}
+/* line 117, _/scss/_layout.scss */
+.homepage_right a {
+  margin: 0;
+  float: left;
+  width: 100%;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.8rem;
+  opacity: .8;
+  -webkit-transition: opacity 0.7s ease-in-out;
+  -moz-transition: opacity 0.7s ease-in-out;
+  -o-transition: opacity 0.7s ease-in-out;
+  transition: opacity 0.7s ease-in-out;
+}
+/* line 127, _/scss/_layout.scss */
+.homepage_right a:hover {
+  opacity: 1;
+}
+/* line 132, _/scss/_layout.scss */
+.homepage_right img {
+  max-width: 100%;
+}
+
+/* line 137, _/scss/_layout.scss */
+.home_image_hr {
+  background-color: #878787;
+  float: left;
+  height: 1px;
+  display: block;
+  width: 250px;
+  margin: 5px 0 10px;
+  opacity: 1 !important;
+}
+
+/* FOOTER -----------------------------------------------------------*/
+/* line 149, _/scss/_layout.scss */
+.footer_wrap {
+  width: 100%;
+  display: block;
+  float: left;
+}
+/* line 154, _/scss/_layout.scss */
+.footer_wrap p {
+  text-align: center;
+  display: block;
+  color: #aaa;
+  margin: 0 auto 30px;
+  width: 80%;
+  font-size: 12px;
+  border-top: 1px solid #666;
+  padding-top: 2em;
+  line-height: 130%;
 }
