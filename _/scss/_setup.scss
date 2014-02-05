@@ -1,0 +1,36 @@
+/* VARIABLES -----------------------------------------------------------*/
+
+$font-primary: GFS Didot, serif;
+$font-secondary: Droid Sans, sans-serif;
+
+/* BASE -----------------------------------------------------------*/
+
+@import url('http://fonts.googleapis.com/css?family=Droid+Sans:400,700|GFS+Didot');
+
+body {
+	font-family: $font-primary;
+	font-size: 1.2rem;
+	line-height: 160%;
+	color: #666;
+}
+
+@import url('http://fonts.googleapis.com/css?family=Droid+Sans:400,700|GFS+Didot');
+
+body {
+	font-family: $font-primary;
+	font-size: 1.2rem;
+	line-height: 160%;
+	color: #666;
+}
+
+/* SUSY SETUP -----------------------------------------------------------*/
+$total-columns         : 12;
+$column-width		   : 4em;
+$gutter-width          : 1em;
+$grid-padding          : $gutter-width;
+
+@include border-box-sizing;
+
+$small                 : 30em;
+$medium                : 47em;
+$large                 : 75em;

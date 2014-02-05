@@ -1,0 +1,41 @@
+/* NAVIGATION -----------------------------------------------------------*/
+
+.nav {
+	list-style: none;
+	margin: 10px auto;
+	padding: 0;
+	display: block;
+
+	li {
+		float: left;
+		width: 50%;
+
+		a {
+			font-size: 1rem;
+			color: #bbb;
+			text-decoration: none;
+			margin: 0;
+			line-height: 1rem;
+			display: block;
+			padding: 5px 10px;
+			letter-spacing: .2rem;
+			text-transform: capitalize;
+
+			&:hover {
+				color: #777;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.mobile_left a {
+	text-align: right !important;
+	margin-right: 5px;
+	border-right: 1px solid #999;
+}
+
+.mobile_right a {
+	text-align: left !important;
+	margin-left: 5px;
+}

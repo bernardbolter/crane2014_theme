@@ -23,7 +23,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+ 
 	<div class="main_container">
 		<section class="layout">
 			<p class="name"><a href="<?php bloginfo( 'url' ); ?>" alt="Evan Z Crane">Evan Z. Crane</a></p>
