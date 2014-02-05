@@ -12,8 +12,9 @@ License: GNU General Public License
 @import "compass/reset";
 @import "susy";
 
-@import "variables";
-@import "mixins";
-@import "base";
-@import "modules";
-@import "layout";
+@import "setup";
+
+@import "header";
+@import "navigation";
+@import "homepage";
+@import "footer";

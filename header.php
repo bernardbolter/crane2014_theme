@@ -25,12 +25,13 @@
 <body <?php body_class(); ?>>
  
 	<div class="main_container">
-		<section class="layout">
-			<p class="name"><a href="<?php bloginfo( 'url' ); ?>" alt="Evan Z Crane">Evan Z. Crane</a></p>
-			
-			<div class="line"></div>
-				<p class="title_tagline">modern heirloom furniture</p>
-			<div class="tagline_line"></div>
+			<header id="header">
+				<p class="name"><a href="<?php bloginfo( 'url' ); ?>" alt="Evan Z Crane">Evan Z. Crane</a></p>
+				
+				<div class="line"></div>
+					<p class="title_tagline">modern heirloom furniture</p>
+				<div class="tagline_line"></div>
+			</header>
 
 			<nav id="menu" role="navigation" class="nav_wrap">
 				<ul class="nav">

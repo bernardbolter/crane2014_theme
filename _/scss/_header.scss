@@ -1,37 +1,96 @@
 /* HEADER -----------------------------------------------------------*/
+#header {
 
-.name {
-	font-size: 2.1rem;
-	text-align: center;
-	display: block;
-
-	a {
-		text-decoration: none;
-		color: #bbb;
-		margin: 15px 0 10px 0;
+	p.name {
+		@include single-transition(all, .70s, ease-in-out);
+		@include font-size(3.2);
+		text-align: center;
 		display: block;
-		letter-spacing: .1rem;
-		font-family: $font-primary;
+
+		a {
+			text-decoration: none;
+			color: #bbb;
+			margin: 16px 0 11px;
+			display: block;
+			letter-spacing: .1em;
+			font-family: $font-primary;
+		}
 	}
-}
 
-.line {
-	width: 80%;
-	margin: 5px auto 0;
-	border-bottom: 1px solid #999;
-}
+	.line {
+		width: 80%;
+		margin: 0 auto;
+		border-bottom: 1px solid #999;
+	}
 
-.title_tagline {
-	font-size: 1rem;
-	margin: 3px 0;
-	color: #666;
-	text-align: center;
-	letter-spacing: .2rem; 
-}
+	.title_tagline {
+		@include font-size(1.6);
+		margin: 9px 0;
+		color: #666;
+		text-align: center;
+		letter-spacing: .2em; 
+	}
 
-.tagline_line {
-	margin: 0 auto;
-	background-color: #878787;
-	height: 1px;
-	width: 250px;
-}
+	.tagline_line {
+		margin: 0 auto;
+		background-color: #878787;
+		height: 1px;
+		width: 250px;
+	}
+
+/* END MOBILE */
+
+	@include at-breakpoint($small) {
+
+		p.name {
+			@include single-transition(all, .70s, ease-in);
+			@include font-size(4.8);
+
+			a {
+				color: #ddd;
+				margin: 40px 0 15px;
+				@include single-transition(color, .70s, ease-in-out);
+
+				&:hover {
+					color: #666;
+				} // hover
+			} // a 
+		} // p.name
+	} // break small
+
+	@include at-breakpoint($medium) {
+
+		p.name {
+			@include single-transition(all, .70s, ease-in);
+			@include font-size(6.4);
+
+			a {
+				color: #ddd;
+				margin: 50px 0 20px;
+				@include single-transition(color, .70s, ease-in-out);
+
+				&:hover {
+					color: #666;
+				} // hover
+			} // a 
+		} // p.name
+	} // break medium
+
+	@include at-breakpoint($large) {
+
+		p.name {
+			@include single-transition(all, .70s, ease-in);
+			@include font-size(8);
+
+			a {
+				color: #ddd;
+				margin: 60px 0 30px;
+				@include single-transition(color, .70s, ease-in-out);
+
+				&:hover {
+					color: #666;
+				} // hover
+			} // a 
+		} // p.name
+	} // break large
+} // header

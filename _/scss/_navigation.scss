@@ -1,41 +1,88 @@
 /* NAVIGATION -----------------------------------------------------------*/
-
-.nav {
-	list-style: none;
-	margin: 10px auto;
-	padding: 0;
+.nav_wrap {
+	width: 100%;
+	margin: 0;
 	display: block;
 
-	li {
-		float: left;
-		width: 50%;
+	ul.nav {
+		list-style: none;
+		margin: 10px auto;
+		padding: 0;
+		display: block;
 
-		a {
-			font-size: 1rem;
-			color: #bbb;
-			text-decoration: none;
-			margin: 0;
-			line-height: 1rem;
-			display: block;
-			padding: 5px 10px;
-			letter-spacing: .2rem;
-			text-transform: capitalize;
+		li {
+			float: left;
+			width: 50%;
 
-			&:hover {
-				color: #777;
-				text-decoration: underline;
-			}
-		}
-	}
-}
+			a {
+				@include font-size(1.6);
+				color: #bbb;
+				text-decoration: none;
+				margin: 0;
+				line-height: 1em;
+				display: block;
+				padding: 5px 10px;
+				letter-spacing: .2em;
+				text-transform: capitalize;
+				@include single-transition(all, .70s, ease-in-out);
 
-.mobile_left a {
-	text-align: right !important;
-	margin-right: 5px;
-	border-right: 1px solid #999;
-}
+				&:hover {
+					color: #777;
+					text-decoration: underline;
+				} // hover
+			}  // a
+		}  // li
 
-.mobile_right a {
-	text-align: left !important;
-	margin-left: 5px;
-}
+		li.mobile_left a {
+		text-align: right !important;
+		border-right: 1px solid #999;
+		} // mobile_left
+
+		li.mobile_right a {
+		text-align: left !important;
+		margin-left: 3px;
+		} // mobile_right
+	} // ul.nav
+
+	@include at-breakpoint($small) {
+
+		margin-bottom: 10px;
+
+			ul.nav {
+				left: auto;
+				display: table;
+
+				li {
+					float: left;
+					width: auto;
+					@include single-transition(all, .70s, ease-in-out);
+
+
+					a {
+						font-family: $font-secondary;
+						@include font-size(1.2);
+						text-transform: uppercase;
+						letter-spacing: .1em;
+						color: #999;
+						display: block;
+						
+						&:hover {
+							color: #333;
+
+						} // hover small
+					} // a small
+				} // li small
+
+				li.mobile_left a {
+					text-align: none;
+					border-right: none;
+				} // mobile_left
+
+					li.mobile_right a {
+					text-align: none;
+					margin-left: 0;
+				} // mobile_right
+			} // ul small
+
+	} // break small
+} // nav_wrap

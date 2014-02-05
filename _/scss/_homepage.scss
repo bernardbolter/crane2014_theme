@@ -1,53 +1,99 @@
 /* HOME PAGE -----------------------------------------------------------*/
-
-.homepage_left {
-	width: 94%;
-	float: left;
-	margin: 1.2rem 3% 0.5rem;
-
-	p {
-		font-size: 0.75rem;
-		text-align: right;
-		color: #888;
-		float: right;
-		width: 220px;
-		letter-spacing: 0.1rem;
-		font-weight: 700;
-		line-height: 140%;
-	}
-}
-
-.homepage_right {
-	width: 94%;
-	float: left;
-	margin: 0 3%;
-
-	a {
-		margin: 0;
-		float: left;
-		width: 100%;
-		color: #333;
-		text-decoration: none;
-		font-size: 0.8rem;
-		opacity: .8;
-		@include single-transition(opacity, .70s, ease-in-out);
-
-		&:hover {
-			opacity: 1;
-		}
-	}
-
-	img {
-		max-width: 100%;
-	}
-}
-
-.home_image_hr {
-	background-color: #878787;
-	float: left;
-	height: 1px;
+.homepage_wrap {
+	width: 100%;
 	display: block;
-	width: 250px;
-	margin: 5px 0 10px;
-	opacity: 1 !important;
-}
+
+	.layout {
+		@include container;
+
+		.homepage_left {
+			width: 94%;
+			float: left;
+			margin: 1.6em 3% 0.7em;
+
+			p {
+				@include font-size(1.2);
+				text-align: right;
+				color: #888;
+				float: right;
+				width: 230px;
+				letter-spacing: 0.1em;
+				font-weight: 700;
+				line-height: 1.5em;
+				@include single-transition(all, .70s, ease-in-out);
+			}
+
+			@include at-breakpoint($small) {
+				margin: 1em 0 0;
+
+				p {
+					color: #999;
+					width: 450px;
+					@include font-size(1.9);
+					line-height: 1.5em;
+					letter-spacing: 0;
+				} // p
+			} // home left break small
+
+			@include at-breakpoint($medium) {
+				@include span-columns(5, 12);
+
+				p {
+					color: #aaa;
+					width: 80%;
+					@include font-size(2.4);
+					margin-top: 70%;
+				}
+
+			} // home left medium break
+		} // home left
+
+		.homepage_right {
+			width: 94%;
+			float: left;
+			margin: 0 3% 2%;
+
+			a {
+				margin: 0;
+				float: left;
+				width: 100%;
+				color: #333;
+				text-decoration: none;
+				@include font-size(1.25);
+				letter-spacing: 0.1em;
+				opacity: .8;
+				@include single-transition(opacity, .70s, ease-in-out);
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+
+			img {
+				max-width: 100%;
+			}
+
+			@include at-breakpoint($medium) {
+				@include span-columns(7 omega, 12);
+
+				border-left: 1px solid black;
+				padding-left: 10px;
+				margin: 2.5% 0;
+
+				a {
+					opacity: .5;
+				}
+			} // home right medium break
+		} // home right
+
+		.home_image_hr {
+			background-color: #878787;
+			float: left;
+			height: 1px;
+			display: block;
+			width: 250px;
+			margin: 10px 0 10px;
+			opacity: 1 !important;
+		}
+	} // layout
+} // homepage wrap
