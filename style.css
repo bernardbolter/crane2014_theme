@@ -181,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #666;
   }
 }
-@media (min-width: 47em) {
+@media (min-width: 43em) {
   /* line 63, _/scss/_header.scss */
   #header p.name {
     -moz-transition: all 0.7s ease-in;
@@ -205,7 +205,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #666;
   }
 }
-@media (min-width: 75em) {
+@media (min-width: 70em) {
   /* line 81, _/scss/_header.scss */
   #header p.name {
     -moz-transition: all 0.7s ease-in;
@@ -393,7 +393,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0;
   }
 }
-@media (min-width: 47em) {
+@media (min-width: 43em) {
   /* line 9, _/scss/_homepage.scss */
   .homepage_wrap .layout .homepage_left {
     width: 40.67797%;
@@ -439,7 +439,7 @@ h1, h2, h3, h4, h5, h6 {
 .homepage_wrap .layout .homepage_right img {
   max-width: 100%;
 }
-@media (min-width: 47em) {
+@media (min-width: 43em) {
   /* line 51, _/scss/_homepage.scss */
   .homepage_wrap .layout .homepage_right {
     width: 57.62712%;
@@ -520,7 +520,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2rem;
   }
 }
-@media (min-width: 47em) {
+@media (min-width: 43em) {
   /* line 9, _/scss/_about.scss */
   .about_wrap .layout .about_left {
     width: 66.10169%;
@@ -529,7 +529,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 20px 0;
   }
 }
-@media (min-width: 75em) {
+@media (min-width: 70em) {
   /* line 9, _/scss/_about.scss */
   .about_wrap .layout .about_left {
     width: 49.15254%;
@@ -551,7 +551,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
 }
-@media (min-width: 47em) {
+@media (min-width: 43em) {
   /* line 50, _/scss/_about.scss */
   .about_wrap .layout .about_right {
     width: 32.20339%;
@@ -564,7 +564,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px 0;
   }
 }
-@media (min-width: 75em) {
+@media (min-width: 70em) {
   /* line 50, _/scss/_about.scss */
   .about_wrap .layout .about_right {
     width: 49.15254%;
@@ -658,11 +658,7 @@ h1, h2, h3, h4, h5, h6 {
 .layout #gallery .instaBox a img {
   width: 100%;
 }
-/* line 58, _/scss/_process.scss */
-.layout #gallery .instaBox a img a {
-  margin: 10px;
-}
-@media (min-width: 47em) {
+@media (min-width: 43em) {
   /* line 33, _/scss/_process.scss */
   .layout #gallery .instaBox {
     -moz-transition: all 0.7s ease-in-out;
@@ -671,8 +667,12 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.7s ease-in-out;
     width: 50%;
   }
+  /* line 64, _/scss/_process.scss */
+  .layout #gallery .instaBox a {
+    margin: 10px;
+  }
 }
-@media (min-width: 75em) {
+@media (min-width: 70em) {
   /* line 33, _/scss/_process.scss */
   .layout #gallery .instaBox {
     -moz-transition: all 0.7s ease-in-out;
@@ -681,8 +681,13 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.7s ease-in-out;
     width: 33.3%;
   }
+  /* line 73, _/scss/_process.scss */
+  .layout #gallery .instaBox a {
+    margin: 10px;
+  }
 }
 
+/* MAIN GALLERY -----------------------------------------------------------*/
 /* FOOTER -----------------------------------------------------------*/
 /* line 3, _/scss/_footer.scss */
 .footer_wrap {

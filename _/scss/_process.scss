@@ -54,21 +54,25 @@
 
 				img {
 					width: 100%;
-
-					a {
-						margin: 10px;
-					} // a
 				} // img
 			} // a
 
 			@include at-breakpoint($medium) {
 				@include single-transition(all, .70s, ease-in-out);
 				width: 50%;
+
+				a {
+					margin: 10px;
+				} // a
 			} // insta break medium
 
 			@include at-breakpoint($large) {
 				@include single-transition(all, .70s, ease-in-out);
 				width: 33.3%;
+
+				a {
+					margin: 10px;
+				} // a
 			} // insta break large
 		} // instaBox
 	} // gallery
