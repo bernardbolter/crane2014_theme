@@ -12,7 +12,7 @@ $(function(){
 	    $('#gallery').spectragram('getUserFeed',{
 	        query: 'evanzcrane',
 	        max: 12,
-	        size: 'medium',
+	        size: 'big',
 	        wrapEachWith: '<div class="instaBox"></div>'
     });
 }); 

@@ -8,9 +8,12 @@ Template Name: process
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-<div class="instaFollow"><a href="http://instagram.com/evanzcrane#" target="_blank">follow on</a></div>
-
-<div id="gallery">
+<div class="instaFollow">
+	<a href="http://instagram.com/evanzcrane#" target="_blank">follow on</a>
+</div>
+<div class="layout">
+	<div id="gallery">
+	</div>
 </div>
 	
 <?php the_content(); ?>

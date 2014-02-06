@@ -578,6 +578,111 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* line 1, _/scss/_process.scss */
+.instaFollow {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 5, _/scss/_process.scss */
+.instaFollow a {
+  text-decoration: none;
+  font-size: 13px;
+  font-size: 1.3rem;
+  color: #333;
+  width: 183px;
+  margin: 10px auto 0;
+  height: 60px;
+  background: url(gfx/instafollow.jpg) no-repeat 0px 10px;
+  opacity: .35;
+  display: block;
+  text-align: center;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+/* line 18, _/scss/_process.scss */
+.instaFollow a:hover {
+  opacity: .9;
+}
+
+/* line 24, _/scss/_process.scss */
+.layout {
+  *zoom: 1;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../../../Users/bemajor/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/utilities/general/_clearfix.scss */
+.layout:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 27, _/scss/_process.scss */
+.layout #gallery {
+  width: 98%;
+  margin: 20px auto;
+  display: block;
+  overflow: hidden;
+}
+/* line 33, _/scss/_process.scss */
+.layout #gallery .instaBox {
+  float: left;
+  display: inline-block;
+  width: 100%;
+}
+/* line 38, _/scss/_process.scss */
+.layout #gallery .instaBox a {
+  background: #ddd;
+  padding: 5px;
+  margin: 10px 0;
+  overflow: hidden;
+  background: #fff;
+  display: block;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+/* line 47, _/scss/_process.scss */
+.layout #gallery .instaBox a:hover {
+  background: #bbb;
+}
+/* line 50, _/scss/_process.scss */
+.layout #gallery .instaBox a:hover a {
+  margin: 10px;
+}
+/* line 55, _/scss/_process.scss */
+.layout #gallery .instaBox a img {
+  width: 100%;
+}
+/* line 58, _/scss/_process.scss */
+.layout #gallery .instaBox a img a {
+  margin: 10px;
+}
+@media (min-width: 47em) {
+  /* line 33, _/scss/_process.scss */
+  .layout #gallery .instaBox {
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    width: 50%;
+  }
+}
+@media (min-width: 75em) {
+  /* line 33, _/scss/_process.scss */
+  .layout #gallery .instaBox {
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    width: 33.3%;
+  }
+}
+
 /* FOOTER -----------------------------------------------------------*/
 /* line 3, _/scss/_footer.scss */
 .footer_wrap {
