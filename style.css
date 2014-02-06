@@ -236,20 +236,22 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   margin: 0;
   display: block;
+  overflow: hidden;
+  *zoom: 1;
 }
-/* line 7, _/scss/_navigation.scss */
+/* line 8, _/scss/_navigation.scss */
 .nav_wrap ul.nav {
   list-style: none;
   margin: 10px auto;
   padding: 0;
   display: block;
 }
-/* line 13, _/scss/_navigation.scss */
+/* line 14, _/scss/_navigation.scss */
 .nav_wrap ul.nav li {
   float: left;
   width: 50%;
 }
-/* line 17, _/scss/_navigation.scss */
+/* line 18, _/scss/_navigation.scss */
 .nav_wrap ul.nav li a {
   font-size: 16px;
   font-size: 1.6rem;
@@ -266,17 +268,17 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
 }
-/* line 29, _/scss/_navigation.scss */
+/* line 30, _/scss/_navigation.scss */
 .nav_wrap ul.nav li a:hover {
   color: #777;
   text-decoration: underline;
 }
-/* line 36, _/scss/_navigation.scss */
+/* line 37, _/scss/_navigation.scss */
 .nav_wrap ul.nav li.mobile_left a {
   text-align: right !important;
   border-right: 1px solid #999;
 }
-/* line 41, _/scss/_navigation.scss */
+/* line 42, _/scss/_navigation.scss */
 .nav_wrap ul.nav li.mobile_right a {
   text-align: left !important;
   margin-left: 3px;
@@ -286,12 +288,12 @@ h1, h2, h3, h4, h5, h6 {
   .nav_wrap {
     margin-bottom: 10px;
   }
-  /* line 51, _/scss/_navigation.scss */
+  /* line 52, _/scss/_navigation.scss */
   .nav_wrap ul.nav {
     left: auto;
     display: table;
   }
-  /* line 55, _/scss/_navigation.scss */
+  /* line 56, _/scss/_navigation.scss */
   .nav_wrap ul.nav li {
     float: left;
     width: auto;
@@ -301,6 +303,14 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.7s ease-in-out;
   }
   /* line 61, _/scss/_navigation.scss */
+  .nav_wrap ul.nav li .custom_crane a {
+    text-decoration: underline !important;
+  }
+  /* line 65, _/scss/_navigation.scss */
+  .nav_wrap ul.nav li .blank a {
+    text-decoration: none !important;
+  }
+  /* line 69, _/scss/_navigation.scss */
   .nav_wrap ul.nav li a {
     font-family: Droid Sans, sans-serif;
     font-size: 12px;
@@ -310,16 +320,16 @@ h1, h2, h3, h4, h5, h6 {
     color: #999;
     display: block;
   }
-  /* line 69, _/scss/_navigation.scss */
+  /* line 77, _/scss/_navigation.scss */
   .nav_wrap ul.nav li a:hover {
     color: #333;
   }
-  /* line 76, _/scss/_navigation.scss */
+  /* line 84, _/scss/_navigation.scss */
   .nav_wrap ul.nav li.mobile_left a {
     text-align: none;
     border-right: none;
   }
-  /* line 81, _/scss/_navigation.scss */
+  /* line 89, _/scss/_navigation.scss */
   .nav_wrap ul.nav li.mobile_right a {
     text-align: none;
     margin-left: 0;
@@ -453,6 +463,119 @@ h1, h2, h3, h4, h5, h6 {
   width: 250px;
   margin: 10px 0 10px;
   opacity: 1 !important;
+}
+
+/* line 1, _/scss/_about.scss */
+.about_wrap {
+  width: 96%;
+  display: block;
+  margin: 20px 2%;
+}
+/* line 6, _/scss/_about.scss */
+.about_wrap .layout {
+  *zoom: 1;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../../../Users/bemajor/.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.0.alpha.16/stylesheets/compass/utilities/general/_clearfix.scss */
+.about_wrap .layout:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 9, _/scss/_about.scss */
+.about_wrap .layout .about_left {
+  display: block;
+  margin: 20px 2%;
+}
+/* line 13, _/scss/_about.scss */
+.about_wrap .layout .about_left .about_head {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: Droid Sans, sans-serif;
+  color: #333;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+/* line 23, _/scss/_about.scss */
+.about_wrap .layout .about_left .about_desc p {
+  font-size: 16px;
+  font-size: 1.6rem;
+  text-align: justify;
+  color: #666;
+  line-height: 1.5em;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+@media (min-width: 30em) {
+  /* line 23, _/scss/_about.scss */
+  .about_wrap .layout .about_left .about_desc p {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 47em) {
+  /* line 9, _/scss/_about.scss */
+  .about_wrap .layout .about_left {
+    width: 66.10169%;
+    float: right;
+    margin-right: 0;
+    margin: 20px 0;
+  }
+}
+@media (min-width: 75em) {
+  /* line 9, _/scss/_about.scss */
+  .about_wrap .layout .about_left {
+    width: 49.15254%;
+    float: right;
+    margin-right: 0;
+    margin: 20px 0;
+  }
+}
+/* line 50, _/scss/_about.scss */
+.about_wrap .layout .about_right {
+  display: block;
+  margin: 10px 2%;
+}
+/* line 54, _/scss/_about.scss */
+.about_wrap .layout .about_right img {
+  width: 100%;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+@media (min-width: 47em) {
+  /* line 50, _/scss/_about.scss */
+  .about_wrap .layout .about_right {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    margin: 10px 0;
+  }
+}
+@media (min-width: 75em) {
+  /* line 50, _/scss/_about.scss */
+  .about_wrap .layout .about_right {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    margin: 10px 0;
+  }
 }
 
 /* FOOTER -----------------------------------------------------------*/

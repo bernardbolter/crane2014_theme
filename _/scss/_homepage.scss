@@ -23,7 +23,7 @@
 				@include single-transition(all, .70s, ease-in-out);
 			}
 
-			@include at-breakpoint($small) {
+			@include at-breakpoint($small) { 
 				margin: 1em 0 0;
 
 				p {

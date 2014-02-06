@@ -3,6 +3,7 @@
 	width: 100%;
 	margin: 0;
 	display: block;
+	@include clearfix;
 
 	ul.nav {
 		list-style: none;
@@ -56,7 +57,14 @@
 					float: left;
 					width: auto;
 					@include single-transition(all, .70s, ease-in-out);
+					
+					.custom_crane a {
+							text-decoration: underline !important;
+						}
 
+					.blank a {
+							text-decoration: none !important;
+						}
 
 					a {
 						font-family: $font-secondary;

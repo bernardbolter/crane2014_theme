@@ -1,0 +1,76 @@
+.about_wrap {
+	width: 96%;
+	display: block;
+	margin: 20px 2%;
+
+	.layout {
+		@include container;
+
+		.about_left {
+			display: block;
+			margin: 20px 2%;
+
+			.about_head {
+				@include font-size(1.8);
+				font-family: $font-secondary;
+				color: #333;
+				text-transform: uppercase;
+				width: 100%;
+				text-align: center;
+				margin: 20px 0;
+			} // about head
+
+			.about_desc p {
+				@include font-size(1.6);
+				text-align: justify;
+				color: #666;
+				line-height: 1.5em;
+				@include single-transition(all, .70s, ease-in-out);
+
+				@include at-breakpoint($small) {
+					@include font-size(2);
+				}
+			} // about desc
+
+			@include at-breakpoint($medium) {
+				@include span-columns(8 omega, 12);
+
+				margin: 20px 0;
+
+			} // about left medium break
+
+			@include at-breakpoint($large) {
+				@include span-columns(6 omega, 12);
+
+				margin: 20px 0;
+
+			} // about left large break
+		} // about left
+
+		.about_right {
+			display: block;
+			margin: 10px 2%;
+
+			img {
+				width: 100%;
+				@include single-transition(all, .70s, ease-in-out);
+			} // img
+
+			@include at-breakpoint($medium) {
+				@include span-columns(4, 12);
+				@include single-transition(all, .70s, ease-in-out);
+
+				margin: 10px 0;
+
+			} // about right medium break
+
+			@include at-breakpoint($large) {
+				@include span-columns(6, 12);
+				@include single-transition(all, .70s, ease-in-out);
+
+				margin: 10px 0;
+
+			} // about right large break
+		} // about right
+	} // layout 
+} // about wrap
