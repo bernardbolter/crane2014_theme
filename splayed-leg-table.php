@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: splayed leg table
+Template Name: splayed star table
 */
 ?>
 
@@ -8,19 +8,24 @@ Template Name: splayed leg table
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-<div class="gallery_title_wrap clearfix">
-	<div class="g_title_desc"><?php the_content(); ?></div>
+<div class="gallery_title_wrap">
+	<p class="galleries_title"><?php wp_title("",true); ?></p>
+	<div class="galleries_desc"><?php the_content(); ?></div>
 </div>
-<div class="gallery_wrap clearfix">
-	<div class="gallery_list"><a href="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/splayed-leg-table/splayed_leg_table_01_lg.jpg" title="Splayed Leg Table"><img src="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/splayed-leg-table/splayed_leg_table_01.jpg" alt="Splayed Leg Table"></a>
-	</div>
-	<div class="gallery_list"><a href="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/splayed-leg-table/splayed_leg_table_02_lg.jpg" title="Splayed Leg Table"><img src="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/splayed-leg-table/splayed_leg_table_02.jpg" alt="Splayed Leg Table"></a>
-	</div>
-	<div class="gallery_list"><a href="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/splayed-leg-table/splayed_leg_table_03_lg.jpg" title="Splayed Leg Table"><img src="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/splayed-leg-table/splayed_leg_table_03.jpg" alt="Splayed Leg Table"></a>
-	</div>
+
+<div class="gallery_wrap">
+	<a class="swipebox" href="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/splayed-star-table/splayed-star-table_01_lg.jpg" title="Splayed Star Table"><img src="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/splayed-star-table/splayed-star-table_01.jpg" alt="Splayed Star Table"></a>
+	<a class="swipebox" href="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/splayed-star-table/splayed-star-table_02_lg.jpg" title="Splayed Star Table"><img src="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/splayed-star-table/splayed-star-table_02.jpg" alt="Splayed Star Table"></a>
+	<a class="swipebox" href="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/splayed-star-table/splayed-star-table_03_lg.jpg" title="Splayed Star Table"><img src="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/splayed-star-table/splayed-star-table_03.jpg" alt="Splayed Star Table"></a>
+	<a class="swipebox" href="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/splayed-star-table/splayed-star-table_04_lg.jpg" title="Splayed Star Table"><img src="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/splayed-star-table/splayed-star-table_04.jpg" alt="Splayed Star Table"></a>
+</div>
+
+<div class="gallery_text">
+	<p>All furniture available in White Oak, Reclaimed Oak, Sapele, Walnut, Ash, and most other domestic hardwoods.</p>
+	<p>Multiple wood finishes, lacquer colors, and upholstery options.</p>
+	<p>Exterior versions available.</p>
+	<p>Please <a title="contact link" href="http://evanzcrane.com/contact">contact</a> or pricing.</p>
 </div>
 
 <?php endwhile; ?>
-
-
 <?php get_footer(); ?>

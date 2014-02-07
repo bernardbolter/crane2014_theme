@@ -48,7 +48,7 @@ module.exports = function(grunt) {
         uglify: {
             my_target: {
                 files: {
-                    'js/scripts.js' : ['_/js/vendor/klass.min.js' , '_/js/vendor/code.photoswipe.jquery-3.0.5.js' , '_/js/vendor/spectrgram.min.js' , '_/js/vendor/*.js' , '_/js/*.js']
+                    'js/scripts.js' : ['_/js/vendor/*.js' , '_/js/author.js']
                 } //files
             } //my_target
         }, //uglify

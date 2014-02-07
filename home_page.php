@@ -15,10 +15,10 @@ Template Name: Home Page
 		</div> <!-- homepage left -->
 
 		<div class="homepage_right">
-			<a href="<?php bloginfo( 'url' ); ?>/bench">
-				<p class="home_image_text">BENCH . 2013</p>
+			<a href="<?php bloginfo( 'url' ); ?>/six-legs-bench">
+				<p class="home_image_text">SIX LEGS BENCH</p>
 				<div class="home_image_hr"></div>
-				<img src="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/bench/bench_square_lg.jpg" />
+				<img src="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/six-legs-bench/bench_square_lg.jpg" />
 			</a>
 		</div> <!-- homepage right -->
 	</section> <!-- layout -->

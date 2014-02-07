@@ -3,6 +3,7 @@
 </footer>
 </div>
 <?php wp_footer(); ?>
+<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/_/js/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/scripts.js"></script>
 </body>
 </html>

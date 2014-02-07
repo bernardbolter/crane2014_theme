@@ -15,4 +15,21 @@ $(function(){
 	        size: 'big',
 	        wrapEachWith: '<div class="instaBox"></div>'
     });
-}); 
+});
+
+$( function(){
+		$(".swipebox").swipebox({
+		useCSS : true, // false will force the use of jQuery for animations
+		hideBarsDelay : 0, // 0 to always show caption and action bar
+	});
+});
+
+$( function(){
+	var craneRand = Math.floor(Math.random()*5);
+
+	function test() {
+	console.log(craneRand);
+	}
+
+	test();
+});

@@ -12,6 +12,16 @@ $font-secondary: Droid Sans, sans-serif;
 
 @import url('http://fonts.googleapis.com/css?family=Droid+Sans:400,700|GFS+Didot');
 
+::selection {
+	background: black;
+	color: white;
+}
+
+::-moz-selection {
+	background: black;
+	color: white;
+}
+
 html {
 	font-size: 62.5%;
 }
@@ -33,6 +43,12 @@ body {
 	border: 1px solid #878787;
 	overflow: hidden;
 	display: block;
+}
+
+#imagelightbox
+{
+    position: fixed;
+    z-index: 9999;
 }
 
 /* SUSY SETUP -----------------------------------------------------------*/

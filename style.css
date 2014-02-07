@@ -76,30 +76,48 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* VARIABLES -----------------------------------------------------------*/
 /* BASE -----------------------------------------------------------*/
 /* line 15, _/scss/_setup.scss */
+::selection {
+  background: black;
+  color: white;
+}
+
+/* line 20, _/scss/_setup.scss */
+::-moz-selection {
+  background: black;
+  color: white;
+}
+
+/* line 25, _/scss/_setup.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 19, _/scss/_setup.scss */
+/* line 29, _/scss/_setup.scss */
 body {
   font-family: GFS Didot, serif;
   color: #666;
 }
 
-/* line 24, _/scss/_setup.scss */
+/* line 34, _/scss/_setup.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: Droid Sans, sans-serif;
   font-weight: 400;
   color: #333;
 }
 
-/* line 30, _/scss/_setup.scss */
+/* line 40, _/scss/_setup.scss */
 .main_container {
   width: 96%;
   margin: 2% auto;
   border: 1px solid #878787;
   overflow: hidden;
   display: block;
+}
+
+/* line 48, _/scss/_setup.scss */
+#imagelightbox {
+  position: fixed;
+  z-index: 9999;
 }
 
 /* SUSY SETUP -----------------------------------------------------------*/
@@ -535,7 +553,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 49.15254%;
     float: right;
     margin-right: 0;
-    margin: 20px 0;
+    margin: 100px 0;
   }
 }
 /* line 50, _/scss/_about.scss */
@@ -639,7 +657,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px;
   margin: 10px 0;
   overflow: hidden;
-  background: #fff;
+  background: #ddd;
   display: block;
   -moz-transition: all 0.7s ease-in-out;
   -o-transition: all 0.7s ease-in-out;
@@ -648,13 +666,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 47, _/scss/_process.scss */
 .layout #gallery .instaBox a:hover {
-  background: #bbb;
+  background: #aaa;
 }
-/* line 50, _/scss/_process.scss */
-.layout #gallery .instaBox a:hover a {
-  margin: 10px;
-}
-/* line 55, _/scss/_process.scss */
+/* line 52, _/scss/_process.scss */
 .layout #gallery .instaBox a img {
   width: 100%;
 }
@@ -667,9 +681,14 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.7s ease-in-out;
     width: 50%;
   }
-  /* line 64, _/scss/_process.scss */
+  /* line 61, _/scss/_process.scss */
   .layout #gallery .instaBox a {
     margin: 10px;
+    opacity: .7;
+  }
+  /* line 65, _/scss/_process.scss */
+  .layout #gallery .instaBox a:hover {
+    opacity: 1;
   }
 }
 @media (min-width: 70em) {
@@ -681,13 +700,220 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.7s ease-in-out;
     width: 33.3%;
   }
-  /* line 73, _/scss/_process.scss */
+  /* line 75, _/scss/_process.scss */
   .layout #gallery .instaBox a {
     margin: 10px;
   }
 }
 
 /* MAIN GALLERY -----------------------------------------------------------*/
+/* line 3, _/scss/_galleries.scss */
+.gallery_wrap {
+  width: 96%;
+  margin: 20px 2%;
+  display: block;
+  overflow: hidden;
+}
+/* line 9, _/scss/_galleries.scss */
+.gallery_wrap a {
+  opacity: .7;
+  display: block;
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 10px;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+/* line 18, _/scss/_galleries.scss */
+.gallery_wrap a:hover {
+  opacity: .8;
+}
+/* line 22, _/scss/_galleries.scss */
+.gallery_wrap a img {
+  width: 100%;
+}
+@media (min-width: 43em) {
+  /* line 9, _/scss/_galleries.scss */
+  .gallery_wrap a {
+    opacity: .6;
+    margin: 0;
+    padding: 10px;
+    width: 50%;
+    display: inline-block;
+  }
+}
+@media (min-width: 70em) {
+  /* line 9, _/scss/_galleries.scss */
+  .gallery_wrap a {
+    opacity: .6;
+    margin: 0;
+    padding: 10px;
+    width: 33.3%;
+    display: inline-block;
+  }
+}
+
+/* line 44, _/scss/_galleries.scss */
+.gallery_text {
+  width: 92%;
+  margin: 15px 4%;
+  display: block;
+  overflow: hidden;
+}
+/* line 50, _/scss/_galleries.scss */
+.gallery_text p {
+  font-size: 13px;
+  font-size: 1.3rem;
+  font-family: GFS Didot, serif;
+  font-weight: 400;
+  color: #666;
+  line-height: 120%;
+  margin: 0 0 10px;
+  display: block;
+}
+/* line 59, _/scss/_galleries.scss */
+.gallery_text p a {
+  text-decoration: none;
+  color: #666;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+/* line 64, _/scss/_galleries.scss */
+.gallery_text p a:hover {
+  text-decoration: underline;
+  color: #222;
+}
+@media (min-width: 30em) {
+  /* line 44, _/scss/_galleries.scss */
+  .gallery_text {
+    width: 80%;
+    margin: 15px auto;
+  }
+}
+
+/* line 77, _/scss/_galleries.scss */
+.bold {
+  font-weight: 700;
+}
+
+/* GALLERIES -----------------------------------------------------------*/
+/* line 83, _/scss/_galleries.scss */
+.gallery_title_wrap {
+  width: 90%;
+  margin: 15px 5% 0;
+  display: block;
+}
+@media (min-width: 30em) {
+  /* line 83, _/scss/_galleries.scss */
+  .gallery_title_wrap {
+    margin: 92%;
+    margin: 0 4%;
+  }
+}
+/* line 93, _/scss/_galleries.scss */
+.gallery_title_wrap p.galleries_title {
+  font-family: Droid Sans, sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #555;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+}
+/* line 102, _/scss/_galleries.scss */
+.gallery_title_wrap .galleries_desc p {
+  font-family: GFS Didot, serif;
+  font-size: 13px;
+  font-size: 1.3rem;
+  color: #777;
+  line-height: 120%;
+  letter-spacing: 0.1em;
+}
+
+/* line 1, _/scss/_contact.scss */
+.contact_map {
+  width: 94%;
+  margin: 20px 3%;
+  display: block;
+  max-width: 640px;
+  float: left;
+}
+/* line 8, _/scss/_contact.scss */
+.contact_map a {
+  display: block;
+  background-image: url("http://maps.google.com/maps/api/staticmap?size=640x640&zoom=14&maptype=roadmap&markers=The+Brooklyn+Navy+Yard+,+63+Flushing+Ave.+,+Brooklyn+N.Y.+11205&sensor=false");
+  background-position: 50% 50%;
+}
+/* line 13, _/scss/_contact.scss */
+.contact_map a img {
+  width: 100%;
+  opacity: 0;
+}
+@media (min-width: 43em) {
+  /* line 1, _/scss/_contact.scss */
+  .contact_map {
+    width: 74%;
+    margin: 20px 13%;
+  }
+}
+@media (min-width: 70em) {
+  /* line 1, _/scss/_contact.scss */
+  .contact_map {
+    width: 50%;
+    margin: 20px 25%;
+  }
+}
+
+/* line 30, _/scss/_contact.scss */
+.contact_title_wrap {
+  width: 94%;
+  display: block;
+  margin: 15px 3%;
+}
+/* line 35, _/scss/_contact.scss */
+.contact_title_wrap .contact_desc {
+  color: #777;
+  font-weight: 400;
+  font-family: Droid Sans, sans-serif;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 140%;
+  letter-spacing: .05em;
+  float: left;
+  margin-top: 0 auto;
+}
+@media (min-width: 43em) {
+  /* line 30, _/scss/_contact.scss */
+  .contact_title_wrap {
+    width: 74%;
+    margin: 20px 13%;
+  }
+  /* line 52, _/scss/_contact.scss */
+  .contact_title_wrap .contact_desc {
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 70em) {
+  /* line 30, _/scss/_contact.scss */
+  .contact_title_wrap {
+    width: 50%;
+    margin: 20px 25%;
+  }
+  /* line 61, _/scss/_contact.scss */
+  .contact_title_wrap .contact_desc {
+    font-size: 17px;
+    font-size: 1.7rem;
+  }
+}
+
 /* FOOTER -----------------------------------------------------------*/
 /* line 3, _/scss/_footer.scss */
 .footer_wrap {
@@ -706,4 +932,308 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 1px solid #666;
   padding-top: 2em;
   line-height: 130%;
+}
+
+/* line 1, _/scss/_swipebox.scss */
+html.swipebox {
+  overflow: hidden !important;
+}
+
+/* line 5, _/scss/_swipebox.scss */
+#swipebox-overlay img {
+  border: none !important;
+}
+
+/* line 9, _/scss/_swipebox.scss */
+#swipebox-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999 !important;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* line 22, _/scss/_swipebox.scss */
+#swipebox-slider {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  white-space: nowrap;
+  position: absolute;
+  display: none;
+}
+
+/* line 32, _/scss/_swipebox.scss */
+#swipebox-slider .slide {
+  background: url("gfx/loader.gif") no-repeat center center;
+  height: 100%;
+  width: 100%;
+  line-height: 1px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 41, _/scss/_swipebox.scss */
+#swipebox-slider .slide:before {
+  content: "";
+  display: inline-block;
+  height: 50%;
+  width: 1px;
+  margin-right: -1px;
+}
+
+/* line 49, _/scss/_swipebox.scss */
+#swipebox-slider .slide img,
+#swipebox-slider .slide .swipebox-video-container {
+  display: inline-block;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* line 61, _/scss/_swipebox.scss */
+#swipebox-slider .slide .swipebox-video-container {
+  background: none;
+  max-width: 1140px;
+  max-height: 100%;
+  width: 100%;
+  padding: 5%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* line 73, _/scss/_swipebox.scss */
+#swipebox-slider .slide .swipebox-video-container .swipebox-video {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 81, _/scss/_swipebox.scss */
+#swipebox-slider .slide .swipebox-video-container .swipebox-video iframe {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 88, _/scss/_swipebox.scss */
+#swipebox-action, #swipebox-caption {
+  position: absolute;
+  left: 0;
+  z-index: 999;
+  height: 50px;
+  width: 100%;
+}
+
+/* line 96, _/scss/_swipebox.scss */
+#swipebox-action {
+  bottom: -50px;
+}
+
+/* line 99, _/scss/_swipebox.scss */
+#swipebox-action.visible-bars {
+  bottom: 0;
+}
+
+/* line 103, _/scss/_swipebox.scss */
+#swipebox-action.force-visible-bars {
+  bottom: 0 !important;
+}
+
+/* line 107, _/scss/_swipebox.scss */
+#swipebox-caption {
+  top: -50px;
+  text-align: center;
+}
+
+/* line 111, _/scss/_swipebox.scss */
+#swipebox-caption.visible-bars {
+  top: 0;
+}
+
+/* line 115, _/scss/_swipebox.scss */
+#swipebox-caption.force-visible-bars {
+  top: 0 !important;
+}
+
+/* line 119, _/scss/_swipebox.scss */
+#swipebox-action #swipebox-prev, #swipebox-action #swipebox-next,
+#swipebox-action #swipebox-close {
+  background-image: url("gfx/icons.png");
+  background-repeat: no-repeat;
+  border: none !important;
+  text-decoration: none !important;
+  cursor: pointer;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+}
+
+/* line 132, _/scss/_swipebox.scss */
+#swipebox-action #swipebox-close {
+  background-position: 15px 12px;
+  left: 40px;
+}
+
+/* line 137, _/scss/_swipebox.scss */
+#swipebox-action #swipebox-prev {
+  background-position: -32px 13px;
+  right: 100px;
+}
+
+/* line 142, _/scss/_swipebox.scss */
+#swipebox-action #swipebox-next {
+  background-position: -78px 13px;
+  right: 40px;
+}
+
+/* line 147, _/scss/_swipebox.scss */
+#swipebox-action #swipebox-prev.disabled,
+#swipebox-action #swipebox-next.disabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+}
+
+/* line 153, _/scss/_swipebox.scss */
+#swipebox-slider.rightSpring {
+  -moz-animation: rightSpring 0.3s;
+  -webkit-animation: rightSpring 0.3s;
+}
+
+/* line 158, _/scss/_swipebox.scss */
+#swipebox-slider.leftSpring {
+  -moz-animation: leftSpring 0.3s;
+  -webkit-animation: leftSpring 0.3s;
+}
+
+@-moz-keyframes rightSpring {
+  /* line 164, _/scss/_swipebox.scss */
+  0% {
+    margin-left: 0px;
+  }
+
+  /* line 168, _/scss/_swipebox.scss */
+  50% {
+    margin-left: -30px;
+  }
+
+  /* line 172, _/scss/_swipebox.scss */
+  100% {
+    margin-left: 0px;
+  }
+}
+@-moz-keyframes leftSpring {
+  /* line 178, _/scss/_swipebox.scss */
+  0% {
+    margin-left: 0px;
+  }
+
+  /* line 182, _/scss/_swipebox.scss */
+  50% {
+    margin-left: 30px;
+  }
+
+  /* line 186, _/scss/_swipebox.scss */
+  100% {
+    margin-left: 0px;
+  }
+}
+@-webkit-keyframes rightSpring {
+  /* line 192, _/scss/_swipebox.scss */
+  0% {
+    margin-left: 0px;
+  }
+
+  /* line 196, _/scss/_swipebox.scss */
+  50% {
+    margin-left: -30px;
+  }
+
+  /* line 200, _/scss/_swipebox.scss */
+  100% {
+    margin-left: 0px;
+  }
+}
+@-webkit-keyframes leftSpring {
+  /* line 206, _/scss/_swipebox.scss */
+  0% {
+    margin-left: 0px;
+  }
+
+  /* line 210, _/scss/_swipebox.scss */
+  50% {
+    margin-left: 30px;
+  }
+
+  /* line 214, _/scss/_swipebox.scss */
+  100% {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 220, _/scss/_swipebox.scss */
+  #swipebox-action #swipebox-close {
+    left: 0;
+  }
+
+  /* line 224, _/scss/_swipebox.scss */
+  #swipebox-action #swipebox-prev {
+    right: 60px;
+  }
+
+  /* line 228, _/scss/_swipebox.scss */
+  #swipebox-action #swipebox-next {
+    right: 0;
+  }
+}
+/* Skin 
+--------------------------*/
+/* line 236, _/scss/_swipebox.scss */
+#swipebox-overlay {
+  background: #0d0d0d;
+}
+
+/* line 240, _/scss/_swipebox.scss */
+#swipebox-action, #swipebox-caption {
+  background-color: #0d0d0d;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0d0d0d), color-stop(100%, black));
+  background-image: -webkit-linear-gradient(#0d0d0d, black);
+  background-image: -moz-linear-gradient(#0d0d0d, black);
+  background-image: -o-linear-gradient(#0d0d0d, black);
+  background-image: linear-gradient(#0d0d0d, #000000);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+}
+
+/* line 251, _/scss/_swipebox.scss */
+#swipebox-action {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* line 255, _/scss/_swipebox.scss */
+#swipebox-caption {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: white !important;
+  font-size: 14px;
+  font-size: 1.4rem;
+  letter-spacing: .1em;
+  line-height: 55px;
+  text-transform: uppercase;
+  font-family: Droid Sans, sans-serif;
 }
