@@ -8,7 +8,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 
-	<title><?php wp_title( ' | ', true, 'right' ); ?></title>
+	<title>EVAN Z. CRANE | modern heirloom furniture</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
@@ -36,7 +36,7 @@
 			<nav id="menu" role="navigation" class="nav_wrap">
 				<ul class="nav">
 					<li class="mobile_left" <?php global $post; if ( is_page( 31 )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/about" alt="about">about</a></li>
-					<li class="mobile_right" <?php global $post; if ( is_page( array( 20, 24, 27, 29 ) )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/gallery" alt="about">gallery</a></li>
+					<li class="mobile_right" <?php global $post; if ( is_page( array( 20, 24, 27, 29, 64, 62, 66, 88 ) )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/gallery" alt="about">gallery</a></li>
 					<li class="mobile_left" <?php global $post; if ( is_page( array( 46, 50 ) )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/process" alt="about">process</a></li>
 					<li class="mobile_right" <?php global $post; if ( is_page( 12 )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/contact" alt="about">contact</a></li>
 				</ul>

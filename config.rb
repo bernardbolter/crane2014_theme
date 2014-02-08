@@ -8,4 +8,4 @@ sass_dir = "_/scss"
 images_dir = "gfx"
 javascripts_dir = "_/js"
 fonts_dir = "fonts"
-output_style = :expanded
+output_style = :compressed
