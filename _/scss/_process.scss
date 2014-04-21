@@ -24,13 +24,13 @@
 .layout {
 	@include container;
 
-	#gallery {
+	#instafeed {
 		width: 98%;
 		margin: 20px auto;
 		display: block;
 		overflow: hidden;
 
-		.instaBox {
+		.instafeed_image {
 			float: left;
 			display: inline-block;
 			width: 100%;

@@ -14,9 +14,9 @@ Template Name: captains chair
 		<div class="galleries_desc"><?php the_content(); ?></div>
 	</div> <!-- gallery_title_wrap -->
 	<div class="gallery_purchase">
-		<a href="#" rel="link to purchase Captains Chair online">
+		<a href="http://evanzcrane.tictail.com/product/captains-chair" rel="link to purchase Captains Chair online">
 			<p class="purchase_title">Purchase Now</p>
-			<p class="purchase_price">Starting at $1300</p>
+			<p class="purchase_price">Starting at 1,300 USD</p>
 		</a> 
 	</div><!-- gallery_purchase -->
 </div> <!-- gallery_info_wrap -->
