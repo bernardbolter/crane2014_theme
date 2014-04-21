@@ -8,10 +8,18 @@ Template Name: captains chair
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-<div class="gallery_title_wrap">
-	<p class="galleries_title"><?php wp_title("",true); ?></p>
-	<div class="galleries_desc"><?php the_content(); ?></div>
-</div>
+<div class="gallery_info_wrap">
+	<div class="gallery_title_wrap">
+		<p class="galleries_title"><?php wp_title("",true); ?></p>
+		<div class="galleries_desc"><?php the_content(); ?></div>
+	</div> <!-- gallery_title_wrap -->
+	<div class="gallery_purchase">
+		<a href="#" rel="link to purchase Captains Chair online">
+			<p class="purchase_title">Purchase Now</p>
+			<p class="purchase_price">Starting at $1300</p>
+		</a> 
+	</div><!-- gallery_purchase -->
+</div> <!-- gallery_info_wrap -->
 
 <div class="gallery_wrap">
 	<a class="swipebox" href="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/captains-chair/captains-chair_01_lg.jpg" title="Captain's Chair"><img src="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/captains-chair/captains-chair_01.jpg" alt="Captain's Chair"></a>

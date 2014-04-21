@@ -1,5 +1,12 @@
 /* MAIN GALLERY -----------------------------------------------------------*/
 
+.gallery_info_wrap {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	@include clearfix;
+}
+
 .gallery_wrap {
 	width: 96%;
 	margin: 20px 2%;
@@ -81,13 +88,14 @@
 /* GALLERIES -----------------------------------------------------------*/
 
 .gallery_title_wrap {
-	width: 90%;
-	margin: 15px 5% 0;
-	display: block;
-
-	@include at-breakpoint($small) {
 		margin: 92%;
-		margin: 0 4%;
+		margin: 15px 4% 0;
+
+	@include at-breakpoint($medium) {
+		width: 65%;
+		margin: 15px 0 15px 5%;
+		display: block;
+		float: left;
 	}
 
 	p.galleries_title {
@@ -107,6 +115,46 @@
 		letter-spacing: 0.1em;
 	} // galleries desc p
 } // galler title wrap
+
+.gallery_purchase {
+	width: 90%;
+	margin: 10px 5% 0;
+	display: block;
+	float: left;
+
+	@include at-breakpoint($medium) {
+		width: 25%;
+		margin: 40px 5% 0 0;
+		display: block;
+		float: right;
+	}
+
+	a {
+		border: 1px solid #999;
+		display: block;
+		color: #666;
+		text-decoration: none;
+		font-family: $font-secondary;
+		float: right;
+		@include single-transition(all, 1s, ease-in-out);
+
+		&:hover {
+			color: white;
+			background: black;
+		}
+	}
+}
+
+.purchase_title {
+	@include font-size(1.4);
+	text-transform: uppercase;
+	margin: 10px;
+}
+
+.purchase_price {
+	@include font-size(1);
+	margin: 0 10px 10px;
+}
 
 
 

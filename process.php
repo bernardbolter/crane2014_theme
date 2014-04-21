@@ -12,7 +12,7 @@ Template Name: process
 	<a href="http://instagram.com/evanzcrane#" target="_blank">follow on</a>
 </div>
 <div class="layout">
-	<div id="gallery">
+	<div id="Instafeed">
 	</div>
 </div>
 	

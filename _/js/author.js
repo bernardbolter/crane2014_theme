@@ -24,6 +24,18 @@ $( function(){
 	});
 });
 
+$(document).ready(function(){
+	var userFeed = new Instafeed({
+        get: 'user',
+        userId: 283821243,
+        accessToken: '8c2505c62b954664a39d787887198bd5',
+        limit: 12,
+        resolution: 'low_resolution',
+        template: '<div class="instafeed_image"><a href="{{link}}" class="insta_link_img"><img src="{{image}}" /></a></div>'
+    });
+    userFeed.run();
+ });
+
 // pruduction code for random image homepage
 
 $( function(){
