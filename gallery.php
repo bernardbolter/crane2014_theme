@@ -9,6 +9,10 @@ Template Name: gallery
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 <div class="gallery_wrap">
+	<a href="<?php bloginfo( 'url' ); ?>/creature-credenza" title="CREATURE CREDENZA"><img src="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/creature-credenza/creature-credenza_square.jpg" alt="CREATURE CREDENZA" /></a>
+	<a href="<?php bloginfo( 'url' ); ?>/fuzzy-captain" title="THE FUZZY CAPTAIN"><img src="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/fuzzy-captain/fuzzy-captain_square.jpg" alt="THE FUZZY CAPTAIN" /></a>
+	<a href="<?php bloginfo( 'url' ); ?>/ball-nose-coffee-table" title="BALL NOSE COFFEE TABLE"><img src="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/ball-nose-coffee-table/ball-nose-coffee-table_square.jpg" alt="BALL NOSE COFFEE TABLE" /></a>
+	<a href="<?php bloginfo( 'url' ); ?>/big-smile-chair" title="BIG SMILE CHAIR"><img src="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/big-smile-chair/big-smile-chair_square.jpg" alt="BIG SMILE CHAIR" /></a>
 	<a href="<?php bloginfo( 'url' ); ?>/six-legs-bench" title="SIX LEGS BENCH"><img src="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/six-legs-bench/six-legs-bench_square.jpg" alt="SIX LEGS BENCH" /></a>
 	<a href="<?php bloginfo( 'url' ); ?>/captains-chair" title="CAPTAIN'S CHAIR"><img src="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/captains-chair/captains-chair_square.jpg" alt="CAPTAIN'S CHAIR"></a>
 	<a href="<?php bloginfo( 'url' ); ?>/splayed-star-table" title="SPLAYED STAR TABLE"><img src="<?php bloginfo( 'template_url' ); ?>/gfx/gallery/splayed-star-table/splayed-star-table_square.jpg" alt="SPLAYED STAR TABLE"></a>

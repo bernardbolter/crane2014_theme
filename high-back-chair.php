@@ -16,7 +16,6 @@ Template Name: high back chair
 	<div class="gallery_purchase">
 		<a href="http://evanzcrane.tictail.com/product/high-back-chair" rel="link to purchase High Back Chair online">
 			<p class="purchase_title">Purchase Now</p>
-			<p class="purchase_price">Starting at 1,650 USD</p>
 		</a> 
 	</div><!-- gallery_purchase -->
 </div> <!-- gallery_info_wrap -->

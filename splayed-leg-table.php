@@ -16,7 +16,6 @@ Template Name: splayed star table
 	<div class="gallery_purchase">
 		<a href="http://evanzcrane.tictail.com/product/splayed-star-table" rel="link to purchase Splayed Star Table online">
 			<p class="purchase_title">Purchase Now</p>
-			<p class="purchase_price">Starting at 5,500 USD</p>
 		</a> 
 	</div><!-- gallery_purchase -->
 </div> <!-- gallery_info_wrap -->

@@ -114,6 +114,11 @@
 		line-height: 120%;
 		letter-spacing: 0.1em;
 	} // galleries desc p
+	p.desc_small {
+		font-family: $font-secondary;
+		@include font-size(1.1);
+		color: #999;
+	}
 } // galler title wrap
 
 .gallery_purchase {

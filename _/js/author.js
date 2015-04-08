@@ -20,7 +20,7 @@ $(document).ready(function(){
 // pruduction code for random image homepage
 
 $( function(){
-	var craneRand = Math.floor(Math.random() * 6);
+	var craneRand = Math.floor(Math.random() * 10);
 
 	if(craneRand === 0) {
 		$(".homepage_right").replaceWith( ('<div class="homepage_right">
@@ -78,6 +78,46 @@ $( function(){
 				<p class="home_image_text">HIGH BACK CHAIR</p>
 				<div class="home_image_hr"></div>
 				<img src="http://evanzcrane.com/wp-content/themes/crane2014_theme/gfx/gallery/high-back-chair/high-back-chair_square.jpg" />
+				</a>
+				</div>') );
+	}
+
+	else if(craneRand === 6) {
+		$(".homepage_right").replaceWith( ('<div class="homepage_right">
+				<a href="http://evanzcrane.com/creature-credenza">
+				<p class="home_image_text">CREATURE CREDENZA</p>
+				<div class="home_image_hr"></div>
+				<img src="http://evanzcrane.com/wp-content/themes/crane2014_theme/gfx/gallery/creature-credenza/creature-credenza_square.jpg" />
+				</a>
+				</div>') );
+	}
+
+	else if(craneRand === 7) {
+		$(".homepage_right").replaceWith( ('<div class="homepage_right">
+				<a href="http://evanzcrane.com/fuzzy-captain">
+				<p class="home_image_text">THE FUZZY CAPTAIN</p>
+				<div class="home_image_hr"></div>
+				<img src="http://evanzcrane.com/wp-content/themes/crane2014_theme/gfx/gallery/fuzzy-captain/fuzzy-captain_square.jpg" />
+				</a>
+				</div>') );
+	}
+
+	else if(craneRand === 8) {
+		$(".homepage_right").replaceWith( ('<div class="homepage_right">
+				<a href="http://evanzcrane.com/big-smile-chair">
+				<p class="home_image_text">BIG SMILE CHAIR</p>
+				<div class="home_image_hr"></div>
+				<img src="http://evanzcrane.com/wp-content/themes/crane2014_theme/gfx/gallery/big-smile-chair/big-smile-chair_square.jpg" />
+				</a>
+				</div>') );
+	}
+
+	else if(craneRand === 9) {
+		$(".homepage_right").replaceWith( ('<div class="homepage_right">
+				<a href="http://evanzcrane.com/ball-nose-coffee-table">
+				<p class="home_image_text">BALL NOSE COFFEE TABLE</p>
+				<div class="home_image_hr"></div>
+				<img src="http://evanzcrane.com/wp-content/themes/crane2014_theme/gfx/gallery/ball-nose-coffee-table-ball-nose-coffee-table_square.jpg" />
 				</a>
 				</div>') );
 	}

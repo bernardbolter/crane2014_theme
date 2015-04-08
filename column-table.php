@@ -11,12 +11,16 @@ Template Name: column table
 <div class="gallery_info_wrap">
 	<div class="gallery_title_wrap">
 		<p class="galleries_title"><?php wp_title("",true); ?></p>
-		<div class="galleries_desc"><?php the_content(); ?></div>
+		<div class="galleries_desc"><p>The “Column” series is inspired by the structural columns of New York City’s industrial factory spaces. The same simplicity of shape that lends structure to those architectural elements, makes the column series unique and robust in construction with only a few components. The dimensions are customizable to fit any space, even a child’s room. The only part of the Column Bench that is fixed is the overall design of the leg structure. The proportions are infinitely adjustable to fit any space.</p></div>
+		<br>
+		<div class="galleries_desc"><p class="desc_small">Shown in:  Natural oak, Hard Maple, and lacquered steel</div></p>
+		<br>
+		<div class="galleries_desc"><p class="desc_small">Column table and bench are modular pieces, available in any length and width</div></p>
+		<br>
 	</div> <!-- gallery_title_wrap -->
 	<div class="gallery_purchase">
 		<a href="http://evanzcrane.tictail.com/product/column-table" rel="link to purchase Column Table online">
 			<p class="purchase_title">Purchase Now</p>
-			<p class="purchase_price">Starting at 3,500 USD</p>
 		</a> 
 	</div><!-- gallery_purchase -->
 </div> <!-- gallery_info_wrap -->

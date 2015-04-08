@@ -16,7 +16,6 @@ Template Name: six legs bench
 	<div class="gallery_purchase">
 		<a href="http://evanzcrane.tictail.com/product/six-legs-bench" rel="link to purchase Six Legs Bench online">
 			<p class="purchase_title">Purchase Now</p>
-			<p class="purchase_price">Starting at 3,600 USD</p>
 		</a> 
 	</div><!-- gallery_purchase -->
 </div> <!-- gallery_info_wrap -->
