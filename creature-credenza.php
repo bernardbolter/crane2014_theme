@@ -18,7 +18,7 @@ Template Name: creature credenza
 		<div class="galleries_desc"><p class="desc_small">Available in: White oak, reclaimed oak, maple, ash, custom hides, (Other species may be available upon request) - Custom Door options: alternate hide color, leather fronts, Basic Lacquered (No Hide/fabric)</p></div>
 	</div> <!-- gallery_title_wrap -->
 	<div class="gallery_purchase">
-		<a href="http://evanzcrane.tictail.com/product/creture-credenza" rel="link to purchase Creature Credenza online">
+		<a href="http://evanzcrane.tictail.com/product/creature-credenza" rel="link to purchase Creature Credenza online">
 			<p class="purchase_title">Purchase Now</p>
 		</a> 
 	</div><!-- gallery_purchase -->

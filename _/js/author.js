@@ -1,7 +1,15 @@
-$( function(){
+$(document).ready(function(){
 		$(".swipebox").swipebox({
 		useCSS : true, // false will force the use of jQuery for animations
 		hideBarsDelay : 0, // 0 to always show caption and action bar
+	});
+});
+
+$(document).ready(function() {
+	$("#mobile_menu").click(function() {
+		console.log("clicked");
+		$(".nav").slideToggle();
+		$(".nav").toggleClass("nav_show");
 	});
 });
 
@@ -19,7 +27,7 @@ $(document).ready(function(){
 
 // pruduction code for random image homepage
 
-$( function(){
+$(document).ready(function(){
 	var craneRand = Math.floor(Math.random() * 10);
 
 	if(craneRand === 0) {
@@ -117,7 +125,7 @@ $( function(){
 				<a href="http://evanzcrane.com/ball-nose-coffee-table">
 				<p class="home_image_text">BALL NOSE COFFEE TABLE</p>
 				<div class="home_image_hr"></div>
-				<img src="http://evanzcrane.com/wp-content/themes/crane2014_theme/gfx/gallery/ball-nose-coffee-table-ball-nose-coffee-table_square.jpg" />
+				<img src="http://evanzcrane.com/wp-content/themes/crane2014_theme/gfx/gallery/ball-nose-coffee-table/ball-nose-coffee-table_square.jpg" />
 				</a>
 				</div>') );
 	}
