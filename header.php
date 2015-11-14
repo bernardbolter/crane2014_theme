@@ -41,6 +41,6 @@
 					<li class="mobile_instagram" <?php global $post; if ( is_page( array( 46, 50 ) )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/instagram" alt="instagram">instagram</a></li>
 					<li class="mobile_press" <?php global $post; if ( is_page( array( 20 ) )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/press" alt="gallery">press</a></li>
 					<li class="mobile_contact" <?php global $post; if ( is_page( 12 )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/contact" alt="contact">contact</a></li>
+					<li class="mobile_contact"><a href="http://evanzcrane.tictail.com/" alt="contact">store</a></li>
 				</ul>
-				<div class="nav_bottom"></div>
 			</nav>
