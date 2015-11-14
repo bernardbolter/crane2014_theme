@@ -5,14 +5,6 @@ $(document).ready(function(){
 	});
 });
 
-$(document).ready(function() {
-	$("#mobile_menu").click(function() {
-		console.log("clicked");
-		$(".nav").slideToggle();
-		$(".nav").toggleClass("nav_show");
-	});
-});
-
 $(document).ready(function(){
 	var userFeed = new Instafeed({
         get: 'user',

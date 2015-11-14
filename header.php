@@ -34,13 +34,12 @@
 			</header>
 
 			<nav id="menu" role="navigation" class="nav_wrap">
-				<div id="mobile_menu">menu<img src="<?php bloginfo( 'template_url' ); ?>/gfx/arrow.jpg" alt="arrow" /></div>
 				<ul class="nav">
-					<li class="mobile_about" <?php global $post; if ( is_page( 31 )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/about" alt="about">about</a></li>
-					<li class="mobile_gallery" <?php global $post; if ( is_page( array( 20, 24, 27, 29, 64, 62, 66, 88 ) )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/gallery" alt="gallery">gallery</a></li>
-					<li class="mobile_instagram" <?php global $post; if ( is_page( array( 46, 50 ) )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/instagram" alt="instagram">instagram</a></li>
-					<li class="mobile_press" <?php global $post; if ( is_page( array( 20 ) )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/press" alt="gallery">press</a></li>
-					<li class="mobile_contact" <?php global $post; if ( is_page( 12 )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/contact" alt="contact">contact</a></li>
-					<li class="mobile_contact"><a href="http://evanzcrane.tictail.com/" alt="contact">store</a></li>
+					<li class="mobile_left" <?php global $post; if ( is_page( 31 )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/about" alt="about">about</a></li>
+					<li class="mobile_right" <?php global $post; if ( is_page( array( 20, 24, 27, 29, 64, 62, 66, 88 ) )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/gallery" alt="gallery">gallery</a></li>
+					<li class="mobile_left" <?php global $post; if ( is_page( array( 46, 50 ) )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/instagram" alt="instagram">instagram</a></li>
+					<li class="mobile_right" <?php global $post; if ( is_page( array( 20 ) )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/press" alt="gallery">press</a></li>
+					<li class="mobile_left" <?php global $post; if ( is_page( 12 )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/contact" alt="contact">contact</a></li>
+					<li class="mobile_right"><a href="http://evanzcrane.tictail.com/" alt="contact">store</a></li>
 				</ul>
 			</nav>

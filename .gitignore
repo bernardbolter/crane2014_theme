@@ -4,6 +4,7 @@ gfx
 fonts
 _/js/jquery/jquery.min.js
 _/js/vendor/*.js
+press_images
 
 # Compiled source #
 ###################
