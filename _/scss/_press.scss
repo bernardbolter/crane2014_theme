@@ -1,15 +1,58 @@
 /* PRESS styles ----------------------------------------------------*/
 
-.press_loop_wrap {
-	width: 100%;
-	display: block;
-	overflow: hidden;
-	@include clearfix;
-}
-
 .press_loop_container {
 	width: 96%;
 	margin: 20px 2%;
 	display: block;
 	overflow: hidden;
+	@include clearfix;
 }
+
+.press_box {
+	position: relative;
+	opacity: 0.8;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 10px;
+
+	a {
+		@include font-size(1.3);
+		font-family: $font-primary;
+		font-weight: 400;
+		color: #666;
+		line-height: 120%;
+		background: rgba(255,255,255,0.5);
+		padding: 5px;
+
+		:hover {
+			text-decoration: underline;
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.press_link_wrap {
+		position: absolute;
+		top: 20%;
+		left: 10px;
+	}
+
+	.press_link_label_wrap {
+		position: absolute;
+		bottom: 30px;
+		right: 10px;
+	}
+
+	@include at-breakpoint($medium) {
+		width: 50%;
+		display: inline-block;
+		float: left;
+	} // .press_box medium break
+
+	@include at-breakpoint($large) {
+		width: 33.3%;
+	} // .press_box large break
+} // .press_box
