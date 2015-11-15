@@ -9,22 +9,39 @@ Template Name: press
 <div id="press_loop_wrap">
 	<div id="press_loop_container">
 
-		<?php $args = array( 'post_type' => 'press', 'posts_per_page' => -1, 'order' => 'ASC' ); ?>
-		<?php $press_loop = new WP_Query( $args ); ?>
+		<?php 
+			$featured = array(
+			 'post_type'      => 'press',
+			 'posts_per_page' => -1,
+			 'meta_key'       => 'featured',
+			 'meta_value'     => 'is_featured'
+			 );
+			$featured_query = new WP_Query($featured);
+			$other = array(
+			 'post_type'      => 'press',
+			 'posts_per_page' => -1,
+			 'meta_key'       => 'featured',
+			 'meta_value'     => 'not_featured'
+			 );
+			$other_query = new WP_Query($other);
+			// merge queries to get featured press at beggining of loop
 
-	 
-			<?php if ( $press_loop->have_posts() ) : ?>
-			<?php while ( $press_loop->have_posts() ) : $press_loop->the_post(); ?>
+			$press_loop = new WP_Query();
+			$press_loop->posts = array_merge( $featured_query->posts, $other_query->posts );
+			$press_loop->post_count = count ( $press_loop->posts );
 
-			<?php
+		if ( $press_loop->have_posts() ) : 
+			while ( $press_loop->have_posts() ) : $press_loop->the_post(); 
+
 				$image_id = get_field('press_link_image');
 				$image_size = 'press-link-image';
 				$image_array = wp_get_attachment_image_src($image_id, $image_size);
 				$image_url = $image_array[0];
-			?>
+		?>
 
 			<div class="press_box">
-				<?php
+
+				<?php // decide if link is to URL or PDF
 				 if( get_field('press_link') ) {
 				 	echo '<a href="' . get_field( 'press_link' ) . '">';
 				 } elseif( get_field('press_pdf') ) {
