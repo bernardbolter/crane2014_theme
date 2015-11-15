@@ -24,9 +24,20 @@ Template Name: press
 			?>
 
 			<div class="press_box">
+				<?php
+				 if( get_field('press_link') ) {
+				 	echo '<a href="' . get_field( 'press_link' ) . '">';
+				 } elseif( get_field('press_pdf') ) {
+				 	echo '<a href="' . get_field('press_pdf') . '" target="_blank">';
+				 } else {
+				 	echo 'a href="#';
+				 }
+				 ?>
+
 				<div class="press_link_image"><img src="<?php echo $image_url; ?>" /></div>
 				<p><?php the_title() ?></p>
-				<a href="<?php echo get_field( 'press_link' ); ?>">go to article</a>
+
+				</a>
 	 		</div> <!-- press_box -->
 
 	 		<?php endwhile; ?>

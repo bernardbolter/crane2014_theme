@@ -1,0 +1,15 @@
+/* PRESS styles ----------------------------------------------------*/
+
+.press_loop_wrap {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	@include clearfix;
+}
+
+.press_loop_container {
+	width: 96%;
+	margin: 20px 2%;
+	display: block;
+	overflow: hidden;
+}
