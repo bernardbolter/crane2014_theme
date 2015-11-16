@@ -69,6 +69,16 @@ Template Name: press
 						?>
 					</p>
 					<p class="press_link_about"><?php echo get_field( 'press_description' ); ?></p>
+					
+					<?php // decide to put a featured text on bottom
+						$feat = get_post_meta($post->ID, 'featured', true);
+						if($feat === 'is_featured') {
+							echo '<p class="featured_tag"><span class="feat_red">* </span>featured</p>';
+						} else {
+							echo null;
+						}
+					?>
+
 				</div> <!-- press_link_wrap -->
 
 				<div class="press_link_label_wrap">
