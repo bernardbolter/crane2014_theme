@@ -10,7 +10,6 @@
 
 .press_box {
 	position: relative;
-	opacity: 0.8;
 	display: block;
 	width: 100%;
 	margin: 0;
@@ -24,10 +23,11 @@
 		line-height: 120%;
 		background: rgba(255,255,255,0.5);
 		padding: 5px;
+	}
 
-		:hover {
-			text-decoration: underline;
-		}
+	.press_image {
+		opacity: 0.5;
+		@include single-transition(all, 1s, ease-in-out);
 	}
 
 	img {
@@ -38,12 +38,52 @@
 		position: absolute;
 		top: 20%;
 		left: 10px;
+		width: 100%;
+		background: rgba(255,255,255,0.8);
+		@include single-transition(all, 1s, ease-in-out);
+
+		h3 {
+			@include font-size(3);
+			font-family: $font-primary;
+			font-weight: 400;
+			color: #555;
+			line-height: 1;
+			padding: 5px 10px 3px;
+		}
+
+		.press_link_date {
+			@include font-size(0.7);
+			font-family: $font-secondary;
+			color: #999;
+			text-transform: uppercase;
+			padding: 0px 0px 3px 15px;
+		}
+
+		.press_link_about {
+			@include font-size(1.3);
+			line-height: 1.2;
+			font-family: $font-secondary;
+			color: #555;
+			padding: 5px 25px 15px;
+		}
 	}
 
 	.press_link_label_wrap {
 		position: absolute;
 		bottom: 30px;
-		right: 10px;
+		right: 0;
+		 
+		.press_link_label {
+			@include font-size(0.9);
+			font-family: $font-secondary;
+			font-weight: 400;
+			color: #222;
+			background: white;
+			padding: 5px 10px 3px;
+			letter-spacing: 0.05em;
+			opacity: 0.6;
+			@include single-transition(all, 1s, ease-in-out);
+		}
 	}
 
 	@include at-breakpoint($medium) {

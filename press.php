@@ -42,15 +42,15 @@ Template Name: press
 
 			<?php // decide if link is to URL or PDF
 			 if( get_field('press_link') ) {
-			 	echo '<a href="' . get_field( 'press_link' ) . '">';
+			 	echo '<a class="press_link" href="' . get_field( 'press_link' ) . '">';
 			 } elseif( get_field('press_pdf') ) {
-			 	echo '<a href="' . get_field('press_pdf') . '" target="_blank">';
+			 	echo '<a class="press_link" href="' . get_field('press_pdf') . '" target="_blank">';
 			 } else {
-			 	echo 'a href="#';
+			 	echo 'a class="press_link" href="#';
 			 }
 			?>
 
-			<img src="<?php echo $image_url; ?>" />
+			<img class="press_image" src="<?php echo $image_url; ?>" />
 
 				<div class="press_link_wrap">
 					
@@ -74,9 +74,9 @@ Template Name: press
 				<div class="press_link_label_wrap">
 						<?php // make a bottom link for either website or PDF
 						 if( get_field('press_link') ) {
-						 	echo '<p class="press_link_label">Click image to go to website</p>';
+						 	echo '<p class="press_link_label">click image to go to website</p>';
 						 } elseif( get_field('press_pdf') ) {
-						 	echo '<p class="press_link_label">Click image to view PDF</p>';
+						 	echo '<p class="press_link_label">click image to view PDF</p>';
 						 } else {
 						 	echo '<p class="no_press_link"></p>';
 						 }
