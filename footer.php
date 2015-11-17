@@ -1,5 +1,11 @@
 <footer id="footer" role="contentinfo" class="footer_wrap">
-	<p class="footer_text">Evan Z. Crane | 63 Flushing Ave. | The Brooklyn Navy Yard | Building 3 suite 1104 | Brooklyn N.Y. 11205 | 917 601 2055</p>
+	<?php $footer_query = new WP_Query(array( 'page_id' => 172));
+		while ($footer_query->have_posts()) : $footer_query->the_post(); ?>
+
+	<?php the_content(); ?>
+
+	<?php endwhile; ?>
+
 </footer>
 </div>
 <?php wp_footer(); ?>

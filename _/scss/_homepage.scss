@@ -12,13 +12,14 @@
 			margin: 1.6em 3% 0.7em;
 
 			p {
-				@include font-size(1.2); 
+				@include font-size(1.4); 
 				text-align: right;
-				color: #888;
+				font-family: $font-secondary;
+				color: #666;
 				float: right;
 				width: 230px;
 				letter-spacing: 0.1em;
-				font-weight: 700;
+				font-weight: 100;
 				line-height: 1.5em;
 				@include single-transition(all, .70s, ease-in-out);
 			}
@@ -27,7 +28,6 @@
 				margin: 1em 0 0;
 
 				p {
-					color: #999;
 					width: 450px;
 					@include font-size(1.9);
 					line-height: 1.5em;
@@ -39,7 +39,6 @@
 				@include span-columns(5, 12);
 
 				p {
-					color: #aaa;
 					width: 80%;
 					@include font-size(2.4);
 					margin-top: 70%;
