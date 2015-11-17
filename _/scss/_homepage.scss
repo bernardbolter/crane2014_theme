@@ -17,7 +17,7 @@
 				font-family: $font-secondary;
 				color: #666;
 				float: right;
-				width: 230px;
+				width: 100%;
 				letter-spacing: 0.1em;
 				font-weight: 100;
 				line-height: 1.5em;
@@ -28,7 +28,7 @@
 				margin: 1em 0 0;
 
 				p {
-					width: 450px;
+					width: 85%;
 					@include font-size(1.9);
 					line-height: 1.5em;
 					letter-spacing: 0;

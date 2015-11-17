@@ -6,19 +6,15 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-	if ($(window).width() > 400 ) {
-		$(".press_link").mouseover(function() {
-			$( '.press_image', this ).css('opacity', '1');
-			$( '.press_link_wrap', this ).css('opacity', '0');
-			$( '.press_link_label', this ).css('opacity', '1');
-		});
+    if ($(window).width() > 400 ) {
+        $(".press_link").mouseover(function() {
+            $( '.press_link_label', this ).css('text-decoration', 'underline');
+        });
 
-		$(".press_link").mouseout(function() {
-			$( '.press_image', this ).css('opacity', '0.6');
-			$( '.press_link_wrap', this ).css('opacity', '1');
-			$( '.press_link_label', this ).css('opacity', '0.6');
-		});
-	}
+        $(".press_link").mouseout(function() {
+            $( '.press_link_label', this ).css('text-decoration', 'none');
+        });
+    }
 });
 
 $(document).ready(function(){

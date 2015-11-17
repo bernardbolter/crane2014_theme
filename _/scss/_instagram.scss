@@ -1,0 +1,75 @@
+.instaFollow {
+	width: 100%;
+	overflow: hidden;
+
+	a {
+	text-decoration: none;
+	@include font-size(1.3);
+	color: #333;
+	width: 183px;
+	margin: 10px auto 0;
+	height: 60px;
+	background: url(gfx/instafollow.jpg) no-repeat 0px 10px;
+	opacity: .35;
+	display: block;
+	text-align: center;
+	@include single-transition(all, .70s, ease-in-out);
+
+		@include at-breakpoint($medium) {
+			&:hover {
+			opacity: .9;
+			} // medium break 
+		} // hover
+	} // a
+} // instaFollow
+
+.layout {
+	@include container;
+
+	#instafeed {
+		width: 98%;
+		margin: 20px auto;
+		display: block;
+		overflow: hidden;
+
+		.instafeed_image {
+			float: left;
+			display: inline-block;
+			width: 100%;
+
+			a {
+				background: #fff;
+				opacity: 1;
+				border: 1px solid #999;
+				padding: 10px 10px 40px;
+				margin: 10px 10px;
+				overflow: hidden;
+				display: block;
+				@include single-transition(all, .70s, ease-in-out);
+				opacity: 0.8;
+
+				img {
+					width: 100%;
+				} // img
+			} // a
+
+			@include at-breakpoint($medium) {
+				width: 50%;
+				display: inline-block;
+
+				a {
+					opacity: .7;
+
+					&:hover {
+						opacity: 1;
+						background: #ededed;
+					}
+				} // a
+			} // insta break medium
+
+			@include at-breakpoint($large) {
+				width: 33.3%;
+			} // insta break large
+		} // instaBox
+	} // gallery
+} // layout

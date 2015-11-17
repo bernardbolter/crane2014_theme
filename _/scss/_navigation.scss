@@ -24,6 +24,7 @@
 
 			a {
 				@include font-size(1.6);
+				font-family: $font-secondary;
 				color: #bbb;
 				text-decoration: none;
 				margin: 0;
@@ -33,13 +34,13 @@
 				letter-spacing: .2em;
 				text-transform: capitalize;
 				@include single-transition(all, .70s, ease-in-out);
-
-				&:hover {
-					color: #777;
-					text-decoration: underline;
-				} // hover
 			}  // a
 		}  // li
+
+		.nav_focused {
+			text-decoration: underline;
+			color: #555;
+		}  // changes navigation link when on that page
 
 		li.mobile_left a {
 			text-align: right !important;
@@ -82,7 +83,7 @@
 						
 						&:hover {
 							color: #333;
-
+							text-decoration: underline;
 						} // hover small
 					} // a small
 				} // li small
@@ -92,7 +93,7 @@
 					border-right: none;
 				} // mobile_left
 
-					li.mobile_right a {
+				li.mobile_right a {
 					text-align: none;
 					margin-left: 0;
 				} // mobile_right

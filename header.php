@@ -35,11 +35,11 @@
 
 			<nav id="menu" role="navigation" class="nav_wrap">
 				<ul class="nav">
-					<li class="mobile_left" <?php global $post; if ( is_page( 31 )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/about" alt="about">about</a></li>
-					<li class="mobile_right" <?php global $post; if ( is_page( array( 20, 24, 27, 29, 64, 62, 66, 88 ) )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/gallery" alt="gallery">gallery</a></li>
-					<li class="mobile_left" <?php global $post; if ( is_page( 122 )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/instagram" alt="instagram">instagram</a></li>
-					<li class="mobile_right" <?php global $post; if ( is_page( 109 )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/press" alt="press">press</a></li>
-					<li class="mobile_left" <?php global $post; if ( is_page( 12 )) { echo "style='text-decoration: underline'"; } ?>><a href="<?php bloginfo( 'url' ); ?>/contact" alt="contact">contact</a></li>
+					<li class="mobile_left"><a <?php global $post; if ( is_page( 31 )) { echo 'class="nav_focused"'; } ?> href="<?php bloginfo( 'url' ); ?>/about" alt="about">about</a></li>
+					<li class="mobile_right"><a <?php global $post; if ( is_page( 29 ) || is_singular( 'galleries' )) { echo 'class="nav_focused"'; } ?> href="<?php bloginfo( 'url' ); ?>/gallery" alt="gallery">gallery</a></li>
+					<li class="mobile_left"><a <?php global $post; if ( is_page( 122 )) { echo 'class="nav_focused"'; } ?> href="<?php bloginfo( 'url' ); ?>/instagram" alt="instagram">instagram</a></li>
+					<li class="mobile_right"><a <?php global $post; if ( is_page( 109 )) { echo 'class="nav_focused"'; } ?> href="<?php bloginfo( 'url' ); ?>/press" alt="press">press</a></li>
+					<li class="mobile_left"><a <?php global $post; if ( is_page( 12 )) { echo 'class="nav_focused"'; } ?> href="<?php bloginfo( 'url' ); ?>/contact" alt="contact">contact</a></li>
 					<li class="mobile_right"><a href="http://evanzcrane.tictail.com/" alt="store">store</a></li>
 				</ul>
 			</nav>

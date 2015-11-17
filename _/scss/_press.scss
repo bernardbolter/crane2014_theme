@@ -15,62 +15,44 @@
 	margin: 0;
 	padding: 10px;
 
+	@include at-breakpoint($medium) {
+		width: 50%;
+		display: inline-block;
+		float: left;
+	} // .press_box medium break
+
+	@include at-breakpoint($large) {
+		width: 33.3%;
+	} // .press_box large break
+
 	a {
 		@include font-size(1.3);
 		font-family: $font-primary;
 		font-weight: 400;
 		color: #666;
-		line-height: 120%;
+		line-height: 1.2;
 		background: rgba(255,255,255,0.5);
 		padding: 5px;
-	}
+		opacity: 0.8;
 
-	.press_image {
-		opacity: 0.5;
-		@include single-transition(all, 1s, ease-in-out);
-	}
+		@include at-breakpoint($medium) {
+			opacity: 0.5;
+			@include single-transition(all, 1s, ease-in-out);
+
+			&:hover {
+				opacity: 0.8;
+			}
+		} // medium break
+
+	} // press box anchor
 
 	img {
 		width: 100%;
 	}
 
-	.press_link_wrap {
-		position: absolute;
-		top: 20%;
-		left: 10px;
-		width: 100%;
-		background: rgba(255,255,255,0.8);
-		@include single-transition(all, 1s, ease-in-out);
-
-		h3 {
-			@include font-size(3);
-			font-family: $font-primary;
-			font-weight: 400;
-			color: #555;
-			line-height: 1;
-			padding: 5px 10px 3px;
-		}
-
-		.press_link_date {
-			@include font-size(0.7);
-			font-family: $font-secondary;
-			color: #999;
-			text-transform: uppercase;
-			padding: 0px 0px 3px 15px;
-		}
-
-		.press_link_about {
-			@include font-size(1.3);
-			line-height: 1.2;
-			font-family: $font-secondary;
-			color: #555;
-			padding: 5px 25px 15px;
-		}
-	}
-
 	.press_link_label_wrap {
 		position: absolute;
-		bottom: 30px;
+		top: 15%;
 		right: 0;
 		 
 		.press_link_label {
@@ -81,32 +63,33 @@
 			background: white;
 			padding: 5px 10px 3px;
 			letter-spacing: 0.05em;
-			opacity: 0.6;
-			@include single-transition(all, 1s, ease-in-out);
-		}
-	}
+			opacity: 1;
+		} // press link label
+	} // press link label wrap
 
-	.featured_tag {
-		@include font-size(0.9);
-		font-family: $font-secondary;
-		font-weight: 400;
-		color: #444;
-		text-align: right;
-		padding: 0 40px 0 0;
-		text-transform: uppercase;
-	}
+	.press_link_wrap {
+		position: absolute;
+		bottom: 0;
+		padding: 10px 6% 3%;
+		margin: 0;
+		left: 10px;
+		width: 100%;
+		background: rgba(255,255,255,0.8);
 
-	.feat_red {
-		color: #b30000;
-	}
+		h3 {
+			@include font-size(3);
+			font-family: $font-secondary;
+			font-weight: 400;
+			color: #555;
+			line-height: 1.2;
+		} // press title
 
-	@include at-breakpoint($medium) {
-		width: 50%;
-		display: inline-block;
-		float: left;
-	} // .press_box medium break
-
-	@include at-breakpoint($large) {
-		width: 33.3%;
-	} // .press_box large break
+		.press_link_about {
+			@include font-size(1.3);
+			line-height: 1;
+			font-family: $font-primary;
+			color: #555;
+			padding: 10px 10% 5%;
+		} // press description
+	} // press link wrap
 } // .press_box
