@@ -18,7 +18,8 @@ Template Name: gallery
 		 'post_type'      => 'galleries',
 		 'posts_per_page' => -1,
 		 'meta_key'       => 'featured',
-		 'meta_value'     => 'not_featured'
+		 'meta_value'     => 'not_featured',
+		 'order'          => 'DESC'
 		 );
 		$other_query = new WP_Query($other);
 		// merge queries to get featured press at beggining of loop

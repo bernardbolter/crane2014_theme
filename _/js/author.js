@@ -1,3 +1,15 @@
+/*
+vendor libraries used -
+jquery
+ieshiv
+instafeed
+modenrizr
+respond
+swipebox
+*/
+
+
+
 $(document).ready(function(){
 		$(".swipebox").swipebox({
 		useCSS : true, // false will force the use of jQuery for animations
