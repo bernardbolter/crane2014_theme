@@ -8,41 +8,43 @@
 
 		.about_left {
 			display: block;
-			margin: 20px 2%;
+			margin: 15px 2%;
 
 			.about_head {
-				@include font-size(1.8);
-				font-family: $font-secondary;
-				color: #333;
-				text-transform: uppercase;
+				@include font-size(6);
+				font-family: $font-primary;
+				color: #ddd;
+				letter-spacing: 0.07em;
 				width: 100%;
 				text-align: center;
 				margin: 20px 0;
 			} // about head
 
 			.about_desc p {
-				@include font-size(1.6);
-				text-align: justify;
+				@include font-size(1.5);
+				font-family: $font-secondary;
 				color: #666;
 				line-height: 1.5em;
 				@include single-transition(all, .70s, ease-in-out);
 
-				@include at-breakpoint($small) {
-					@include font-size(2);
+				@include at-breakpoint($medium) {
+					@include font-size(1.8);
+				}
+
+				@include at-breakpoint($large) {
+					@include font-size(2.2);
 				}
 			} // about desc
 
 			@include at-breakpoint($medium) {
-				@include span-columns(8 omega, 12);
-
-				margin: 20px 0;
+				width: 48%;
+				float: right;
+				margin: 20px 1%;
 
 			} // about left medium break
 
 			@include at-breakpoint($large) {
-				@include span-columns(6 omega, 12);
-
-				margin: 100px 0;
+				margin: 50px 1%;
 
 			} // about left large break
 		} // about left
@@ -50,6 +52,7 @@
 		.about_right {
 			display: block;
 			margin: 10px 2%;
+			float: left;
 
 			img {
 				width: 100%;
@@ -57,18 +60,17 @@
 			} // img
 
 			@include at-breakpoint($medium) {
-				@include span-columns(4, 12);
+				width: 48%;
 				@include single-transition(all, .70s, ease-in-out);
 
-				margin: 10px 0;
+				margin: 10px 1%;
 
 			} // about right medium break
 
 			@include at-breakpoint($large) {
-				@include span-columns(6, 12);
 				@include single-transition(all, .70s, ease-in-out);
 
-				margin: 10px 0;
+				margin: 10px 1%;
 
 			} // about right large break
 		} // about right

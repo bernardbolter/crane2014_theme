@@ -11,11 +11,11 @@ Template Name: about
 <div class="about_wrap">
 	<section class="layout">
 		<div class="about_left">
-			<p class="about_head">ABOUT</p>
 			<div class="about_desc"><?php the_content(); ?></div>
 		</div>
 		<div class="about_right">
-			<img src="<?php bloginfo( 'template_url' ); ?>/gfx/about.jpg" />
+			<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); ?>
+			<img src="<?php echo $image[0]; ?> " alt="Evan Z Crane" />
 		</div>
 	</section>
 </div>

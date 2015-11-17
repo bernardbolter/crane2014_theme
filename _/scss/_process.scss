@@ -15,8 +15,10 @@
 	text-align: center;
 	@include single-transition(all, .70s, ease-in-out);
 
-		&:hover {
-		opacity: .9;
+		@include at-breakpoint($medium) {
+			&:hover {
+			opacity: .9;
+			} // medium break 
 		} // hover
 	} // a
 } // instaFollow
@@ -36,18 +38,14 @@
 			width: 100%;
 
 			a {
-				background: #ddd;
-				padding: 5px;
-				margin: 10px 0;
+				background: #fff;
+				opacity: 1;
+				border: 1px solid #999;
+				padding: 10px 10px 40px;
+				margin: 10px 10px;
 				overflow: hidden;
-				background: #ddd;
 				display: block;
 				@include single-transition(all, .70s, ease-in-out);
-			
-				&:hover {
-					background: #aaa;
-
-				} // hover
 
 				img {
 					width: 100%;
@@ -55,26 +53,21 @@
 			} // a
 
 			@include at-breakpoint($medium) {
-				@include single-transition(all, .70s, ease-in-out);
 				width: 50%;
+				display: inline-block;
 
 				a {
-					margin: 10px;
 					opacity: .7;
 
 					&:hover {
 						opacity: 1;
+						background: #ededed;
 					}
 				} // a
 			} // insta break medium
 
 			@include at-breakpoint($large) {
-				@include single-transition(all, .70s, ease-in-out);
 				width: 33.3%;
-
-				a {
-					margin: 10px;
-				} // a
 			} // insta break large
 		} // instaBox
 	} // gallery
