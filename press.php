@@ -47,7 +47,7 @@ Template Name: press
 			 } elseif( get_field('press_pdf') ) {
 			 	echo '<a class="press_link" href="' . get_field('press_pdf') . '" target="_blank">';
 			 } else {
-			 	echo 'a class="press_link" href="#';
+			 	echo '<a class="press_link" href="#">';
 			 }
 			?>
 
