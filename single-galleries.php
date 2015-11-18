@@ -35,7 +35,7 @@ Template Name: galleries
 				?>
 				<a href="<?php the_permalink() ?>" rel="link to another gallery">
 			
-				<p>check out the <?php echo get_the_title(); ?> <img src="<?php bloginfo( 'template_url' ); ?>/gfx/right_arrow.png" alt="right arrow" /></p>
+				<p>check out the <?php echo get_the_title(); ?> <img src="<?php bloginfo( 'template_url' ); ?>/gfx/right_arrow.jpg" alt="right arrow" /></p>
 			</a>
 			<?php endwhile; wp_reset_query(); ?>
 		</div><!-- galleries next item -->
